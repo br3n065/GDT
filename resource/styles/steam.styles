@@ -1,0 +1,2289 @@
+steam.styles
+{
+  include "config.ini"
+  include "resource/styles/colors.styles"
+  //include "resource/styles/colors_alt.styles"
+
+  include "resource/styles/friends.styles"
+  include "resource/styles/html.styles"
+  include "resource/styles/page.styles"
+
+  styles
+  {
+		downarrow
+		{
+      image="graphics/icon_down_default"
+		}
+
+		downarrow:hover
+		{
+      image="graphics/icon_down_hover"
+      render_bg
+      {
+				0="fill(x0+5, y0+4, x1-2, y1-4, buttonfaceactive)"
+				1="fill(x0+4, y0+5, x0+5, y1-5, buttonfaceactive)"
+				2="fill(x1-2, y0+5, x1-1, y1-5, buttonfaceactive)"
+      }
+		}
+
+		uparrow
+		{
+      image="graphics/icon_up_default"
+		}
+
+		rightarrow
+		{
+      image="graphics/icon_right_default"
+		}
+
+		rightarrow:hover
+		{
+      image="graphics/icon_right_hover"
+		}
+
+	  Button
+	  {
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.button.text
+      bgcolor=none
+			render_bg
+			{
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+			}
+	  }
+
+    Button:hover
+    {
+  		textcolor=gdt.button.text.hover
+  		render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.hover.shadow)"
+      }
+    }
+
+    Button:focus
+    {
+			textcolor=gdt.button.text.focus
+			render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.shadow)"
+      }
+    }
+
+    Button:focus:hover
+    {
+			textcolor=gdt.button.text.focus.hover
+			render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.hover.shadow)"
+      }
+    }
+
+    Button:active
+		{
+      textcolor=gdt.button.text.active
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.active.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.active)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.active.shadow)"
+      }
+    }
+
+    Button:selected
+    {
+      textcolor=gdt.button.text.selected
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.selected.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.selected)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.selected.shadow)"
+      }
+    }
+
+    Button:disabled
+    {
+      textcolor=gdt.button.text.disabled
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.disabled.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.disabled)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.disabled.shadow)"
+      }
+    }
+
+    ToggleButton
+    {
+      inset="3 0 0 0"
+      inset="3 3 0 0" [$OSX]
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      textcolor=gdt.button.text
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.shadow)"
+      }
+    }
+
+    ToggleButton:focus
+    {
+      textcolor=gdt.button.text.focus
+	 		render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.focus.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.focus.shadow)"
+      }
+    }
+
+    ToggleButton:focus:hover
+    {
+      textcolor=gdt.button.text.focus.hover
+	 		render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.focus.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.focus.hover.shadow)"
+      }
+    }
+
+    ToggleButton:hover
+    {
+      textcolor=gdt.button.text.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.hover.shadow)"
+      }
+    }
+
+    ToggleButton:selected
+    {
+      textcolor=gdt.button.text.selected
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.selected.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.selected)"
+        2="fill(x0+2, y0+4, x0+6, y1-4, gdt.toggle.selected.indicator)"
+        3="fill(x0, y1-1, x1, y1, gdt.toggle.selected.shadow)"
+      }
+    }
+
+    ToggleButton:selected:hover
+    {
+      textcolor=gdt.button.text.selected.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.selected.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.selected.hover)"
+        2="fill(x0+2, y0+4, x0+6, y1-4, gdt.toggle.selected.hover.indicator)"
+        3="fill(x0, y1-1, x1, y1, gdt.toggle.selected.hover.shadow)"
+      }
+    }
+
+    ComboBox
+    {
+      inset="3 0 0 0"
+      font-family=basefont
+      font-size=14
+      textcolor=gdt.button.text
+      selectedtextcolor=gdt.button.text
+      selectedbgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+
+        // line, divides arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.highlight)"
+      }
+    }
+
+    ComboBox:hover
+    {
+      textcolor=gdt.button.text.hover
+      selectedtextcolor=gdt.button.text.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.hover.shadow)"
+
+        // line, divides arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.hover.highlight)"
+      }
+    }
+
+    ComboBox:focus
+    {
+      textcolor=gdt.button.text.focus
+      selectedtextcolor=gdt.button.text.focus
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.shadow)"
+
+        // line, divides arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.focus.highlight)"
+      }
+    }
+
+    ComboBox:focus:hover
+    {
+      textcolor=gdt.button.text.focus.hover
+      selectedtextcolor=gdt.button.text.focus.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.hover.shadow)"
+
+        // line, divides arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.focus.hover.highlight)"
+      }
+    }
+
+    ComboBoxButton
+    {
+      padding-left=2
+      textcolor=gdt.button.text
+      image="graphics/icon_down_default"
+      bgcolor=none
+      render_bg {}
+    }
+
+    ComboBoxButton:hover
+    {
+      textcolor=gdt.button.text.hover
+      image="graphics/icon_down_hover"
+    }
+
+    ComboBoxButton:focus
+    {
+      textcolor=gdt.button.text.focus
+      image="graphics/icon_down_focus"
+    }
+
+    ComboBoxButton:focus:hover
+    {
+      textcolor=gdt.button.text.focus.hover
+      image="graphics/icon_down_default"
+    }
+
+    "ComboBox ScrollBar"
+    {
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+1, y0+1, x1-3, y1-1, gdt.black)"
+      }
+    }
+
+    Divider
+    {
+      bgcolor=none
+      render
+      {
+        0="fill(x0+6, y0+1, x1-6, y0+2, gdt.div)"
+      }
+    }
+
+    CheckButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.selection.text
+      image="graphics/chkUnselStd"
+    }
+
+    CheckButton:selected
+    {
+      image="graphics/chkSelStd"
+    }
+
+    CheckButton:focus
+    {
+      image="graphics/chkUnselFocus"
+    }
+
+    CheckButton:selected:focus
+    {
+      image="graphics/chkSelFocus"
+    }
+
+    CheckButton:disabled
+    {
+      textcolor=gdt.selection.text.disabled
+      image="graphics/chkUnselDis"
+    }
+
+    CheckButton:selected:disabled
+    {
+      textcolor=gdt.selection.text.disabled
+      image="graphics/chkSelDis"
+    }
+
+    IndeterminateCheckButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.selection.text
+      image="graphics/chkIndeterminate"
+      bgcolor=none
+    }
+
+    CheckButtonList
+    {
+      inset="1 1 1 1"
+      textcolor=gdt.selection.text
+      bgcolor=none
+      render {}
+			render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.bg)"
+      }
+    }
+
+    CheckButtonList:scrollbar
+    {
+      inset="1 1 1 1"
+      textcolor=gdt.selection.text
+      bgcolor=none
+      render {}
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.bg)"
+      }
+    }
+
+    "CheckbuttonList Checkbutton"
+    {
+      textcolor=gdt.selection.text
+    }
+    "CheckbuttonList Checkbutton:focus" {}
+
+    RadioButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.selection.text
+      image="graphics/RadUnselStd"
+      bgcolor=none
+      render_bg {}
+    }
+
+    RadioButton:selected
+    {
+      image="graphics/radSelStd"
+    }
+
+    RadioButton:focus
+    {
+      image="graphics/radSelDown"
+    }
+
+    RadioButton:selected:focus
+    {
+      image="graphics/radSelFocus"
+    }
+
+    RadioButtonList
+    {
+      inset="-2 0 0 0"
+      bgcolor=none
+      render_bg
+			{
+        0="gradient(x0, y0, x1, y1, DialogBG, ClientBG)"
+			}
+    }
+
+    Frame
+    {
+      bgcolor=gdt.client
+      render
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.client.edge)"
+        1="fill(x0, y1-1, x1, y1, gdt.client.edge)"
+        2="fill(x0, y0+1, x0+1, y1-1, gdt.client.edge)"
+        3="fill(x1-1, y0+1, x1, y1-1, gdt.client.edge)"
+      }
+    }
+
+    Frame:FrameFocus
+    {
+      bgcolor=gdt.client
+      render
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.client.edge)"
+        1="fill(x0, y1-1, x1, y1, gdt.client.edge)"
+        2="fill(x0, y0+1, x0+1, y1-1, gdt.client.edge)"
+        3="fill(x1-1, y0+1, x1, y1-1, gdt.client.edge)"
+      }
+    }
+
+    FrameBRGripPanel
+    {
+      image="graphics/resizer"
+    }
+
+    FrameBRGripPanel:hover
+    {
+      image="graphics/resizer_over"
+    }
+
+    FrameBRGripPanel:active
+    {
+      image="graphics/resizer_over"
+    }
+
+    FrameMinimizeButton
+    {
+      image="graphics/win32_win_min"
+      image="graphics/osx_win_dis" [$OSX]
+      bgcolor=none
+      render_bg {}
+    }
+
+    FrameMinimizeButton:hover
+    {
+      image="graphics/win32_win_min_hover"
+      image="graphics/osx_min_hov" [$OSX]
+    }
+
+    FrameMinimizeButton:framefocus [$OSX]
+    {
+      image="graphics/osx_min_def"
+    }
+
+    FrameMinimizeButton:framefocus:hover [$OSX]
+    {
+      image="graphics/osx_min_hov"
+    }
+
+    FrameMinimizeButton:active [$OSX]
+    {
+      image="graphics/osx_min_down"
+    }
+
+    FrameMaximizeButton
+    {
+      image="graphics/win32_win_max"
+      image="graphics/osx_win_dis" [$OSX]
+      bgcolor=none
+      render_bg {}
+    }
+
+    FrameMaximizeButton:hover
+    {
+      image="graphics/win32_win_max_hover"
+      image="graphics/osx_max_hov" [$OSX]
+    }
+
+    FrameMaximizeButton:framefocus
+    {
+      image="graphics/win32_win_max"
+      image="graphics/osx_max_def" [$OSX]
+    }
+
+    FrameMaximizeButton:framefocus:hover
+    {
+      image="graphics/win32_win_max_hover"
+      image="graphics/osx_max_hov" [$OSX]
+    }
+
+    FrameMaximizeButton:active
+    {
+      image="graphics/win32_win_max_hover"
+      image="graphics/osx_max_down" [$OSX]
+    }
+
+    FrameRestoreButton
+    {
+      image="graphics/win32_win_restore"
+      image="graphics/osx_win_dis" [$OSX]
+      bgcolor=none
+      render_bg {}
+    }
+
+    FrameRestoreButton:hover
+    {
+      image="graphics/win32_win_restore_hover"
+      image="graphics/osx_max_hov" [$OSX]
+    }
+
+    FrameRestoreButton:framefocus
+    {
+      image="graphics/win32_win_restore"
+      image="graphics/osx_max_def" [$OSX]
+    }
+
+    FrameRestoreButton:framefocus:hover
+    {
+      image="graphics/win32_win_restore_hover"
+      image="graphics/osx_max_hov" [$OSX]
+    }
+
+    FrameRestoreButton:active
+    {
+      image="graphics/win32_win_restore_hover"
+      image="graphics/osx_max_down" [$OSX]
+    }
+
+    FrameCloseButton
+    {
+      image="graphics/win32_win_close"
+      image="graphics/osx_win_dis" [$OSX]
+      bgcolor=none
+      render_bg {}
+    }
+
+    FrameCloseButton:hover
+    {
+      image="graphics/win32_win_close_hover"
+      image="graphics/osx_close_hov" [$OSX]
+    }
+
+    FrameCloseButton:framefocus [$OSX]
+    {
+      image="graphics/osx_close_def"
+    }
+
+    FrameCloseButton:framefocus:hover [$OSX]
+    {
+      image="graphics/osx_close_hov"
+    }
+
+    FrameCloseButton:active [$OSX]
+    {
+      image="graphics/osx_close_down"
+    }
+
+    FrameCloseButton:disabled
+    {
+      image="graphics/win32_win_close_disabled"
+      image="graphics/osx_win_dis" [$OSX]
+    }
+
+    FrameTitle
+    {
+      inset="5 2 0 0"
+      inset="0 4 0 0" [$OSX]
+      padding-left=0
+      padding-right=64
+      padding-right=0 [$OSX]
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text.label.disabled
+      bgcolor=none
+      render_bg {}
+    }
+
+    FrameTitle:framefocus
+    {
+      textcolor=gdt.text.label
+      textcolor=gdt.text.label [$OSX]
+    }
+
+    GraphPanel
+    {
+      textcolor=gdt.graph
+      bgcolor=none
+      render_bg {}
+    }
+
+    Label
+		{
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text.label
+      selectedtextcolor=gdt.text.label
+      bgcolor=none
+ 		}
+
+    ListPanel
+    {
+      inset="0 -1 1 1"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      shadowtextcolor=gdt.text.disabled	// the color of disabled line items
+      selectedtextcolor=gdt.text
+      bgcolor=gdt.bg
+      selectedbgcolor=gdt.list.selected.bg
+      render {}
+      render_bg {}
+    }
+
+    "CGamesListPanel"
+    {
+      inset="0 -1 1 1"
+      font-family=basefont
+      font-size=15
+      font-weight=400
+      textcolor=gdt.text
+      selectedtextcolor=gdt.text
+      bgcolor=gdt.bg
+      selectedbgcolor=gdt.game.selectedbg
+      render_bg {}
+    }
+
+    "GameItem_Uninstalled"
+    {
+      textcolor=gdt.gameuninstalled
+      selectedtextcolor=gdt.gameuninstalled.selected
+    }
+    "GameItem_Uninstalled:hover"
+    {
+      textcolor=gdt.gameuninstalled.hover
+      selectedtextcolor=gdt.gameuninstalled.selected
+    }
+
+    "GameItem_Installed"
+    {
+      textcolor=gdt.gameinstalled
+      selectedtextcolor=gdt.gameinstalled.selected
+    }
+
+    "GameItem_Installed:hover"
+    {
+      textcolor=gdt.gameinstalled.hover
+      selectedtextcolor=gdt.gameinstalled.selected
+    }
+
+    "GameItem_Running"
+    {
+      font-style=italic
+      textcolor=gdt.gamerunning
+      selectedtextcolor=gdt.gamerunning.selected
+    }
+
+    "GameItem_Running:hover"
+    {
+      font-style=italic
+      textcolor=gdt.gamerunning.hover
+      selectedtextcolor=gdt.gamerunning.selected
+    }
+
+    "GameItem_Shortcut"
+    {
+      textcolor=gdt.gameshortcut
+      selectedtextcolor=gdt.gameshortcut.selected
+    }
+
+    "GameItem_Shortcut:hover"
+    {
+        textcolor=gdt.gameshortcut.hover
+      selectedtextcolor=gdt.gameshortcut.selected
+    }
+
+    "GameItem_Mod"
+    {
+      textcolor=gdt.gamemod
+      selectedtextcolor=gdt.gamemod.selected
+    }
+
+    "GameItem_Mod:hover"
+    {
+      textcolor=gdt.gamemod.hover
+      selectedtextcolor=gdt.gamemod.selected
+    }
+
+    "GameItem_Updating"
+    {
+      font-style=italic
+      textcolor=gdt.gameupdating
+      selectedtextcolor=gdt.gameupdating.selected
+    }
+
+    "GameItem_Updating:hover"
+    {
+      font-style=italic
+      textcolor=gdt.gameupdating.hover
+      selectedtextcolor=gdt.gameupdating.selected
+    }
+
+    "GameItem_Decrypting"
+    {
+      font-style=italic
+      textcolor=gdt.gamedecrypting
+      selectedtextcolor=gdt.gamedecrypting.selected
+    }
+
+    "GameItem_Decrypting:hover"
+    {
+      font-style=italic
+      textcolor=gdt.gamedecrypting.hover
+      selectedtextcolor=gdt.gamedecrypting.selected
+    }
+
+    "GameItem_Syncing"
+    {
+      font-style=italic
+      textcolor=gdt.gamesyncing
+      selectedtextcolor=gdt.gamesyncing.selected
+    }
+
+    "GameItem_Syncing:hover"
+    {
+      font-style=italic
+      textcolor=gdt.gamesyncing.hover
+      selectedtextcolor=gdt.gamesyncing.selected
+    }
+
+    "GameItem_LockedSiteLicense"
+    {
+      font-style=italic
+      textcolor=gdt.gamelocked
+      selectedtextcolor=gdt.gamelocked.selected
+    }
+    "GameItem_LockedSiteLicense:hover"
+    {
+      font-style=italic
+      textcolor=gdt.gamelocked.hover
+      selectedtextcolor=gdt.gamelocked.selected
+    }
+
+    "GameColumn_BigText"
+    {
+      font-family=basefont
+      font-size=17
+      font-weight=700
+      textcolor=text
+    }
+
+    ListPanelCheckBox
+    {
+      inset="0 5 0 0"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      image="graphics/chkUnselStd_Sm"
+      bgcolor=none
+      render_bg {}
+    }
+
+    ListPanelCheckBox:selected
+    {
+      image="graphics/chkSelStd_Sm"
+    }
+
+		ListPanelCheckBox:focus
+    {
+      image="graphics/chkUnselFocus_Sm"
+    }
+
+    ListPanelCheckBox:selected:focus
+    {
+      image="graphics/chkSelFocus_Sm"
+    }
+
+    ListPanelCheckBox:disabled
+    {
+      textcolor=gdt.text.disabled
+      image="graphics/chkUnselDis_Sm"
+    }
+
+    ListPanelCheckBox:disabled:select
+    {
+      textcolor=gdt.text.disabled
+      image="graphics/chkUnselDis"
+    }
+
+    "ListPanelColumnheader ListPanelCheckBox"
+    {
+      inset="4 0 0 0"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text.label
+      image="graphics/chkUnSelFocus_Sm"
+		}
+
+		"ListPanelColumnHeader ListPanelCheckBox:selected"
+    {
+      image="graphics/chkUnSelStd_Sm"
+    }
+
+		"ListPanelColumnheader ListPanelCheckBox:focus"
+    {
+      image="graphics/chkUnSelFocus_Sm"
+		}
+
+    "ListPanelColumnheader ListPanelCheckBox:selected:focus"
+    {
+      image="graphics/chkSelFocus_Sm"
+    }
+
+    ListPanelColumnheader
+    {
+      inset="1 3 0 0"
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.text.label
+      bgcolor=none
+      render_bg
+			{
+        0="fill(x0, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0, y1-1, x1, y1, gdt.infobox.div)"
+			}
+		}
+
+    ListPanelColumnHeader:hover
+    {
+      textcolor=gdt.text.label.hover
+    }
+
+    "Csteamrootdialog ListPanelColumnheader"
+    {
+      inset="0 0 0 0"
+      inset="0 1 0 0" [$OSX]
+      padding-top=1
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.text.label
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0, y1-1, x1, y1, gdt.infobox.div)"
+      }
+    }
+
+    "Csteamrootdialog ListPanelColumnHeader:hover"
+    {
+      textcolor=gdt.text.label.hover
+    }
+
+   	"Csteamrootdialog ListPanelSectionCollapser"
+    {
+      inset="0 1 0 1"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-2, gdt.infobox.header)"
+        1="fill(x0, y1-2, x1, y1-1, gdt.infobox.div)"
+      }
+    }
+
+	  "CGamesPage_Mini ListPanelSectionCollapser"
+    {
+      inset="0 1 0 1"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-2, gdt.infobox.header)"
+        1="fill(x0, y1-2, x1, y1-1, gdt.infobox.div)"
+      }
+    }
+
+    ListPanelColumnSelectButton // the games list column chooser
+    {
+      inset="-3 3 0 0"
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse)"
+      }
+      render_bg
+      {
+        0="fill(x0+1, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0+1, y1-1, x1, y1, gdt.infobox.div)"
+      }
+    }
+
+    ListPanelColumnSelectButton:hover
+    {
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+    ListPanelColumnSelectButton:selected
+    {
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+    "CGamesListPanel ListPanelColumnSelectButton"
+    {
+      inset="-3 3 0 0"
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse)"
+      }
+      render_bg
+      {
+        0="fill(x0+1, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0+1, y1-1, x1, y1, gdt.infobox.div)"
+      }
+    }
+
+    "CGamesListPanel ListPanelColumnSelectButton:hover"
+    {
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+    "CGamesListPanel ListPanelColumnSelectButton:selected"
+    {
+      render
+      {
+        0="image(x0+3, y0+3, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+    ListPanelDragger
+    {
+      bgcolor=none
+      render
+      {
+        0="fill(x0, y0+2, x0+1, y1-3, gdt.infobox.div)"
+      }
+    }
+
+    ListPanelInterior
+    {
+      inset="3 1 0 0"
+      font-size=15
+      textcolor=gdt.text
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    ListPanelInterior:scrollbar
+    {
+      inset="3 1 -1 0"
+      textcolor=gdt.text
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    "CSteamRootDialog ListPanel"
+    {
+      padding-left=2
+      padding-right=2
+    }
+
+   "Csteamrootdialog ListPanelInterior"
+    {
+      inset="3 0 3 0"
+      bgcolor=none
+      render_bg {}
+    }
+
+    "Csteamrootdialog ListPanelInterior:scrollbar"
+    {
+      inset="3 0 -1 0"
+			bgcolor=none
+			render {}
+			render_bg {}
+    }
+
+    ListPanelSectionHeader
+    {
+      inset="2 0 0 0"
+      font-style=uppercase
+      textcolor=gdt.text.label
+      render_bg
+      {
+        0="fill(x0-1, y0, x1, y1-2, gdt.list.header)"
+        1="fill(x0-1, y1-2, x1, y1-1, gdt.list.div)"
+      }
+    }
+
+    ListPanelSectionHeader:hover
+    {
+        textcolor=gdt.text.label.hover
+    }
+
+    "ListPanel RichText"
+    {
+      font-family=basefont
+      font-size=15
+      textcolor=gdt.text
+      bgcolor=none
+      render_bg {}
+    }
+
+    "ListPanel RichText url"
+    {
+      font-size=15
+      font-style=underline
+      textcolor=gdt.text.link
+    }
+
+    "ListPanel RichTextInterior"
+    {
+      //bgcolor=DarkDialogBG //TODO
+      bgcolor=none
+      render_bg {}
+    }
+
+    ListPanelSectionCollapser
+    {
+      inset="-4 0 0 0"
+      padding-top=-2
+      padding-bottom=-2
+      image="graphics/icon_collapse"
+      image="graphics/icon_collapse_osx" [$OSX]
+      bgcolor=none
+      render_bg {}
+    }
+
+    ListPanelSectionCollapser:hover
+    {
+      image="graphics/icon_collapse_over"
+      image="graphics/icon_collapse_over_osx" [$OSX]
+    }
+
+    ListPanelSectionCollapser:selected
+    {
+      image="graphics/icon_expand"
+      image="graphics/icon_expand_osx" [$OSX]
+    }
+
+    ListPanelSectionCollapser:selected:hover
+    {
+      image="graphics/icon_expand_over"
+      image="graphics/icon_expand_over_osx" [$OSX]
+    }
+
+    MainNav
+    {
+      font-family=basefont
+      font-size=21
+      font-weight=700
+      font-style=uppercase
+      textcolor=label
+      selectedtextcolor=text
+      bgcolor=none
+    }
+
+    Menu
+    {
+      inset="2 2 2 2"
+      padding-right=4
+      bgcolor=none
+      render {}
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.menu)"
+
+        1="fill(x0, y0, x1, y0+1, gdt.menu.edge)"
+        2="fill(x0, y1-1, x1, y1, gdt.menu.edge)"
+        3="fill(x0, y0+1, x0+1, y1-1, gdt.menu.edge)"
+        4="fill(x1-1, y0+1, x1, y1-1, gdt.menu.edge)"
+      }
+    }
+
+    MenuBar
+    {
+      inset="2 0 0 0"
+      bgcolor=none
+    }
+
+    "MenuBar MenuButton"
+    {
+      inset="-2 5 0 0"
+      textcolor=gdt.menu.text.disabled
+      bgcolor=none
+    }
+
+    "MenuBar MenuButton:frameFocus"
+    {
+      textcolor=gdt.menu.text
+    }
+
+    "MenuBar MenuButton:frameFocus:hover"
+    {
+      textcolor=gdt.menu.text.hover
+    }
+
+    "MenuBar MenuButton:frameFocus:selected"
+    {
+      textcolor=gdt.menu.text.selected
+    }
+
+    MenuButton
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.menu.text
+      bgcolor=none
+      render_bg {}
+    }
+
+    MenuButton:hover
+    {
+      textcolor=gdt.menu.text.hover
+    }
+
+    MenuButton:selected
+    {
+      textcolor=gdt.menu.text.selected
+    }
+
+    MenuItem
+    {
+      inset="0 0 0 0"
+      padding-right=6
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.menu.item.text
+      bgcolor=none
+      render_bg {}
+    }
+
+    MenuItem:selected
+    {
+      textcolor=gdt.menu.item.text.selected
+    }
+
+    MenuItem:hover
+    {
+      textcolor=gdt.menu.item.text.hover
+    }
+
+    MenuItem:disabled
+    {
+      textcolor=gdt.menu.item.text.disabled
+      shadowtextcolor=none
+    }
+
+    MenuItem:disabled:hover
+    {
+      textcolor=gdt.menu.item.text.disabled.hover
+      shadowtextcolor=none
+    }
+
+    MenuSeparator
+    {
+      inset="-4 0 0 0"
+      textcolor=gdt.menu.div
+      bgcolor=none
+    }
+
+    Notification
+    {
+      font-family=basefont
+      font-size=15
+      font-weight=400
+      bgcolor=none
+      render
+      {
+        0="fill(x0, y1-1, x1, y1, gdt.notification.edge)" // bottom
+        1="fill(x1-1, y0, x1, y1 , gdt.notification.edge)" // right
+        2="fill(x0, y0, x1, y0+1, gdt.notification.edge)" // top
+        3="fill(x0, y0, x0+1, y1, gdt.notification.edge)" // left
+      }
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.notification)"
+      }
+    }
+
+    TabCloseButton
+    {
+      image="graphics/tiny_x_default"
+      render_bg {}
+    }
+
+    TabCloseButton:hover
+    {
+      image="graphics/tiny_x_hover"
+    }
+
+    Panel
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      bgcolor=none
+    }
+
+    ProgressBar
+    {
+      textcolor=gdt.progress.light
+      bgcolor=none
+      render
+      {
+        // lines around
+        1="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        2="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorder)"
+        3="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        4="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    RichText
+    {
+      inset="-1 -1 0 0"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      selectedtextcolor=gdt.text
+      render_bg
+      {
+        0="fill(x0+1, y0+1, x1-1, y1-1, DialogBG)"
+
+        // lines around
+        1="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        2="fill(x0+1, y1-1, x1-1, y1, ButtonBorder)"
+        3="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        4="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    RichTextInterior
+		{
+      bgcolor=none
+    }
+
+    "RichText ScrollBar"
+    {
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+1, y0+1, x1-3, y1-1, gdt.black)"
+      }
+    }
+
+    // style of links in a rich text control
+    "RichText url"
+    {
+      font-size=14
+      font-style=underline
+      textcolor=gdt.text.link
+      selectedtextcolor=gdt.text.link
+    }
+
+    "RichText url:hover"
+    {
+      textcolor=gdt.text.link.hover
+    }
+
+    // style of bold text in a rich text control
+    "RichText bold"
+    {
+      font-size=15
+      font-weight=1000
+    }
+
+    "RichText emphasis"
+    {
+      font-size=15
+      font-style=italic
+    }
+
+    ScrollBar
+    {
+      inset="0 0 0 0"
+    }
+
+    ScrollBarButton.up
+    {
+      inset="-1 0 0 0"
+      image="graphics/icon_up_default"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+2, y0+2, x1-4, y1, gdt.scrollbar)"
+      }
+    }
+
+    ScrollBarButton.up:hover
+    {
+      image="graphics/icon_up_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0+2, x1-4, y1, gdt.scrollbar.hover)"
+      }
+    }
+
+    ScrollBarButton.up:active
+    {
+      image="graphics/icon_up_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0+2, x1-4, y1, gdt.scrollbar.active)"
+      }
+    }
+
+    ScrollBarButton.up:disabled
+    {
+      image="graphics/icon_up_disabled"
+      render_bg
+      {
+        0="fill(x0+2, y0+2, x1-4, y1, gdt.scrollbar.disabled)"
+      }
+    }
+
+    ScrollBarButton.down
+    {
+      inset="-2 2 0 0"
+      image="graphics/icon_down_default"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+2, y0, x1-4, y1-2, gdt.scrollbar)"
+      }
+    }
+
+    ScrollBarButton.down:hover
+    {
+      image="graphics/icon_down_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0, x1-4, y1-2, gdt.scrollbar.hover)"
+      }
+    }
+
+    ScrollBarButton.down:active
+    {
+      image="graphics/icon_down_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0, x1-4, y1-2, gdt.scrollbar.active)"
+      }
+    }
+
+
+     ScrollBarButton.down:disabled
+    {
+      image="graphics/icon_down_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0, x1-4, y1-2, gdt.scrollbar.disabled)"
+      }
+    }
+
+    ScrollBarButton.left
+    {
+      inset="1 3 0 0"
+      image="graphics/icon_left_default"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+2, y0+5, x1, y1-3, gdt.scrollbar)"
+      }
+    }
+
+    ScrollBarButton.left:hover
+    {
+      image="graphics/icon_left_hover"
+      render_bg
+      {
+        0="fill(x0+2, y0+5, x1, y1-3, gdt.scrollbar.hover)"
+      }
+    }
+
+    ScrollBarButton.right
+    {
+      inset="0 2 0 0"
+      image="graphics/icon_right_default"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0+5, x1, y1-3, gdt.scrollbar)"
+      }
+    }
+
+    ScrollBarButton.right:hover
+    {
+      image="graphics/icon_right_hover"
+      render_bg
+      {
+        0="fill(x0, y0+5, x1, y1-3, gdt.scrollbar.hover)"
+      }
+    }
+
+    ScrollBarHandle  //vertical scrollbar thumb
+    {
+      image="graphics/icon_scroll_handle"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+2, y0+1, x1-4, y1-1, gdt.scrollbar)"
+      }
+    }
+
+    "ScrollBarHandle:hover"
+    {
+      image="graphics/icon_scroll_handle_over"
+      render_bg
+      {
+        0="fill(x0+2, y0+1, x1-4, y1-1, gdt.scrollbar.hover)"
+      }
+    }
+
+    "ScrollBarHandle:active"
+    {
+      image="graphics/icon_scroll_handle_over"
+      render_bg
+      {
+        0="fill(x0+2, y0+1, x1-4, y1-1, gdt.scrollbar.active)"
+      }
+    }
+
+    "SliderHoriz"  //horizontal scrollbar thumb
+    {
+      image="graphics/icon_scroll_handle_horiz"
+      render
+      {
+        0="fill(x0+2, y0+6, x1-1, y1-3, ButtonFace)"
+      }
+    }
+
+    "SliderHoriz:hover"
+    {
+      image="graphics/icon_scroll_handle_over_horiz"
+      render
+      {
+        0="fill(x0+2, y0+6, x1-1, y1-3, ButtonFaceActive)"
+      }
+    }
+
+    "SliderHoriz:active"
+    {
+      image="graphics/icon_scroll_handle_over_horiz"
+      render
+      {
+        0="fill(x0+2, y0+6, x1-1, y1-3, ButtonFaceActive)"
+      }
+    }
+
+    ScrollBarSlider // gutter
+    {
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    ScrollBarSliderHoriz // gutter
+    {
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view
+    {
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    ScrollBarSlider:disabled
+    {
+      bgcolor=none
+      render_bg {}
+    }
+
+    "ScrollBar SliderHoriz" // gutter
+    {
+      bgcolor=none
+    }
+
+    SectionedListPanel
+    {
+      inset="1 -1 1 1"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor=gdt.text
+			selectedtextcolor=gdt.text
+			bgcolor=none
+			selectedbgcolor=Focus
+      render {}
+      render_bg
+      {
+	   		0="gradient(x0, y0, x1, y0+140, dialogbg, almostblack)"
+	   		1="fill(x0, y0+140, x1, y1, almostblack)"
+      }
+    }
+
+    SectionedlistpanelCollapser
+    {
+      inset="2 -1 0 0"
+      image="graphics/icon_collapse"
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0-1, y0, x1+1, y1-2, gdt.list.header)"
+        1="fill(x0-1, y1-2, x1+1, y1-1, gdt.list.div)"
+      }
+    }
+
+    SectionedListPanelCollapser:hover
+    {
+      image="graphics/icon_collapse_over"
+    }
+
+    SectionedListPanelCollapser:selected
+    {
+      image="graphics/icon_expand"
+    }
+
+    SectionedListPanelCollapser:selected:hover
+    {
+      image="graphics/icon_expand_over"
+    }
+
+    Slider
+    {
+      font-family=basefont
+      font-size=10
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    Slider:focus
+    {
+      textcolor=gdt.text.label.focus
+    }
+
+    StatusLabel
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    StatusLabelDim
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=normal
+      textcolor=gdt.text.label.dim
+    }
+
+    StatusLabel:hover
+    {
+      textcolor=gdt.text.label.hover
+    }
+
+    TextEntry
+    {
+      inset-top=0
+      inset-left=4
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      shadowtextcolor=gdt.text  // this is the cursor color
+      selectedtextcolor=gdt.text.selected
+      bgcolor=none
+      selectedbgcolor=TextSelectedBG
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorder)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    TextEntry:focus
+    {
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorderFocus)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorderFocus)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorderFocus)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorderFocus)"
+      }
+    }
+
+    TextEntry:disabled
+    {
+      textcolor=gdt.text.disabled
+      bgcolor=buttonfacedisabled
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorderDisabled)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorderDisabled)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorderDisabled)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorderDisabled)"
+      }
+    }
+
+    // The 'empty' style is used for 'hint text' in text entry fields.
+    // If the text box does not have focus and does not have content, a
+    // hint text property will be shown with this style. This is comment
+    // to pre-fill to box with something like 'Search' that goes away when active
+    TextEntry:empty
+    {
+      font-style=italic
+      textcolor=gdt.text.disabled
+    }
+
+    TextEntryLarge
+    {
+      inset-left=4
+      font-family=basefont
+      font-size=18
+      font-weight=400
+      textcolor=gdt.text
+      shadowtextcolor=gdt.text   // this is the cursor color
+      selectedtextcolor=gdt.text.selected
+      bgcolor=none
+      selectedbgcolor=textselectedbg
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorder)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    TextEntryLarge:focus
+    {
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorderFocus)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorderFocus)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorderFocus)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorderFocus)"
+      }
+    }
+
+    TextEntryLarge:disabled
+    {
+      textcolor=gdt.text.disabled
+      bgcolor=ButtonFaceDisabled
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorderDisabled)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorderDisabled)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorderDisabled)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorderDisabled)"
+      }
+    }
+
+    TextEntryURL
+    {
+      inset-top=-1
+      inset-left=0
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      shadowtextcolor=gdt.text	// this is the cursor color
+      selectedtextcolor=gdt.text.selected
+      bgcolor=none
+      selectedbgcolor=textselectedbg
+      render {}
+    }
+
+    TextEntryURL:Hover
+    {
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonFaceDisabled)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonFaceDisabled)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonFaceDisabled)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonFaceDisabled)"
+      }
+    }
+
+    // the background and frame of a tooltip
+    TooltipWindow
+    {
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0+1, y0+1, x1-1, y1-1, gdt.tooltip)"
+
+        1="fill(x0, y0, x1, y0+1, gdt.tooltip.edge)"
+        2="fill(x0, y1-1, x1, y1, gdt.tooltip.edge)"
+        3="fill(x0, y0+1, x0+1, y1-1, gdt.tooltip.edge)"
+        4="fill(x1-1, y0+1, x1, y1-1, gdt.tooltip.edge)"
+      }
+    }
+
+    // body text inside a tooltip
+    "TooltipWindow Label"
+    {
+      padding-left=4
+      textcolor=gdt.tooltip.text
+    }
+
+    // headline text inside a tooltip
+   	tooltip_headline
+   	{
+   		padding-top=1
+   		padding-bottom=0
+   		padding-left=4
+   		font-weight=1000
+   		textcolor=gdt.tooltip.text
+   	}
+
+    TreeNode
+    {
+      bgcolor=none
+      render_bg {}
+    }
+
+    TreeNodeImage
+    {
+      bgcolor=none
+    }
+
+    TreeViewSubPanel
+    {
+      bgcolor=gdt.bg
+    }
+
+    TreeNodeText
+    {
+      font-family=basefont
+      font-size=13
+      textcolor=text
+      selectedtextcolor=textselected
+      bgcolor=none
+      selectedbgcolor=gdt.list.selected.bg
+      render {}
+      render_bg {}
+    }
+
+    TreeView
+    {
+      render_bg
+      {
+        0="fill(x0+1, y0+1, x1-1, y1-1, none)"
+
+        // lines around
+        1="fill(x0+2, y0, x1-2, y0+1, ButtonBorder)"
+        2="fill(x0+2, y1-1, x1-2, y1, ButtonBorder)"
+        3="fill(x0, y0+2, x0+1, y1-2, ButtonBorder)"
+        4="fill(x1-1, y0+2, x1, y1-2, ButtonBorder)"
+
+        // single pixel fills in the corners
+        5="fill(x0+2, y0, x1-2, y0+1, ButtonBorderDisabled)"  // top
+        6="fill(x0+2, y1-1, x1-2, y1, ButtonBorderDisabled)"  // bottom
+        7="fill(x0, y0+2, x0+1, y1-2, ButtonBorderDisabled)"  // left
+        8="fill(x1-1, y0+2, x1, y1-2, ButtonBorderDisabled)"  // right
+        9="fill(x0, y0+1, x0+1, y0+2, ButtonBorderDisabled2)"
+        10="fill(x1-1, y0+1, x1, y0+2, ButtonBorderDisabled2)"
+        11="fill(x0, y1-2, x0+1, y1-1, ButtonBorderDisabled2)"
+        12="fill(x1-1, y1-2, x1, y1-1, ButtonBorderDisabled2)"
+        13="fill(x0+1, y0, x0+2, y0+1, ButtonBorderDisabled2)"
+        14="fill(x1-2, y0, x1-1, y0+1, ButtonBorderDisabled2)"
+        15="fill(x0+1, y1-1, x0+2, y1, ButtonBorderDisabled2)"
+        16="fill(x1-2, y1-1, x1-1, y1, ButtonBorderDisabled2)"
+      }
+    }
+
+    URLLabel
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=underline
+      textcolor=gdt.text.link
+      bgcolor=none
+    }
+
+   	URLLabel:hover
+    {
+      textcolor=gdt.text.link.hover
+    }
+
+    URLLabelSimple
+    {
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      font-style=regular
+      textcolor=gdt.text.link
+      bgcolor=none
+    }
+
+    URLLabelSimple:hover
+    {
+      font-style=underline
+      textcolor=gdt.text.link.hover
+    }
+
+    URLLabelSimple2
+    {
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      font-style=regular
+      textcolor=gdt.text.link
+      bgcolor=none
+    }
+
+    URLLabelSimple2:hover
+    {
+      textcolor=gdt.text.link.hover
+    }
+
+    "ListPanel URLLabel"
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      font-style=underline
+      textcolor=gdt.list.text.link
+      bgcolor=none
+    }
+
+   	"ListPanel URLLabel:hover"
+    {
+      textcolor=gdt.list.text.link.hover
+    }
+
+    // Steam-specific styles
+    CConsoleHistory
+    {
+      font-family="Lucida Console"
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-family="Menlo" [$OSX]
+      font-size=9
+      font-size=12 [$LINUX]
+      font-size=14 [$OSX]
+      textcolor=gdt.text
+      selectedtextcolor=gdt.text.selected
+      render {}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y1, gdt.bg)"
+			}
+    }
+
+    GameColumnHeaderFavorites
+    {
+      image="steam/cached/fav_remove"
+    }
+
+    CGamesListFavoritesToggle
+    {
+      image="steam/cached/fav_addTo"
+    }
+
+    CGamesListFavoritesToggle:hover
+    {
+      image="steam/cached/fav_addTo_ovr"
+    }
+
+    CGamesListFavoritesToggle:selected
+    {
+      image="steam/cached/fav_remove"
+    }
+
+    CGamesListFavoritesToggle:selected:hover
+    {
+      image="steam/cached/fav_remove_ovr"
+    }
+
+    WrapPanel
+    {
+      inset="1 -1 1 1"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=text
+      selectedtextcolor=textselected
+      bgcolor=none
+      selectedbgcolor=focus
+      render_bg
+      {
+        0="gradient(x0, y0, x1, y0+240, propertysheetbg, darkdialogbg)"
+        1="fill(x0, y0+240, x1, y1, darkdialogbg)"
+      }
+    }
+
+    BackButton
+    {
+      inset="-5 -1 0 0"
+      image="graphics/icon_button_back"
+      bgcolor=none
+      render_bg {}
+    }
+
+    BackButton:hover
+    {
+      image="graphics/icon_button_back_down"
+    }
+
+    BackButton:active
+    {
+      image="graphics/icon_button_back_down"
+    }
+
+    BackButton:disabled
+    {
+      image="graphics/icon_button_back_disabled"
+    }
+
+    FullscreenButton
+    {
+      image="graphics/icon_controller_bpm"
+      bgcolor=none
+      render_bg {}
+    }
+
+    FullscreenButton:hover
+    {
+      image="graphics/icon_controller_bpm_over"
+    }
+
+    FullscreenButton:active
+    {
+      image="graphics/icon_controller_bpm_down"
+    }
+
+    FullscreenButton:disabled
+    {
+      image="graphics/icon_controller_bpm_disabled"
+    }
+
+    VRButton
+    {
+      image="graphics/icon_vr"
+      bgcolor=none
+      render_bg {}
+    }
+
+    VRButton:hover
+    {
+      image="graphics/icon_vr_over"
+    }
+
+    VRButton:active
+    {
+      image="graphics/icon_vr_down"
+    }
+
+    VRButton:disabled
+    {
+      image="graphics/icon_vr_disabled"
+    }
+
+    VRButtonExit
+    {
+      image="graphics/icon_vr_happy"
+      bgcolor=none
+      render_bg {}
+    }
+
+    VRButtonExit:hover
+    {
+      image="graphics/icon_vr_happy_over"
+    }
+
+    VRButtonExit:active
+    {
+      image="graphics/icon_vr_happy_down"
+    }
+
+    VRButtonExit:disabled
+    {
+      image="graphics/icon_vr_disabled"
+    }
+
+    ForwardButton
+    {
+      inset="-5 -1 0 0"
+      image="graphics/icon_button_forward"
+      bgcolor=none
+      render_bg {}
+    }
+
+    ForwardButton:hover
+    {
+      image="graphics/icon_button_forward_over"
+    }
+
+    ForwardButton:active
+    {
+      image="graphics/icon_button_forward_down"
+    }
+
+    ForwardButton:disabled
+    {
+      image="graphics/icon_button_forward_disabled"
+    }
+
+    HomeButton
+    {
+      inset="-5 0 0 0"
+      image="graphics/icon_button_home"
+      bgcolor=none
+      render_bg {}
+    }
+
+    HomeButton:hover
+    {
+      image="graphics/icon_button_home_over"
+    }
+
+    HomeButton:active
+    {
+      image="graphics/icon_button_home_down"
+    }
+
+    HomeButton:disabled
+    {
+      image="graphics/icon_button_home_disabled"
+    }
+
+    ReloadButton
+    {
+      inset="-5 0 0 0"
+      image="graphics/icon_button_reload"
+      bgcolor=none
+      render_bg {}
+    }
+
+    ReloadButton:hover
+    {
+      image="graphics/icon_button_reload_over"
+    }
+
+    ReloadButton:active
+    {
+      image="graphics/icon_button_reload_down"
+    }
+
+    ReloadButton:disabled
+    {
+      image="graphics/icon_button_reload_disabled"
+    }
+
+    StopButton
+    {
+      inset="-5 0 0 0"
+      image="graphics/icon_button_stop"
+      bgcolor=none
+      render_bg {}
+    }
+
+    StopButton:hover
+    {
+      image="graphics/icon_button_stop_over"
+    }
+
+    StopButton:active
+    {
+      image="graphics/icon_button_stop_down"
+    }
+
+    StopButton:disabled
+    {
+      image="graphics/icon_button_stop_disabled"
+    }
+
+    gamedetails-headerlabel
+    {
+      font-family=basefont
+      font-size=17
+      font-weight=700
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    gamedetails-headerlabel-red
+    {
+      font-family=basefont
+      font-size=17
+      font-weight=700
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    gamedetails-headerlabel-green
+    {
+      font-family=basefont
+      font-size=17
+      font-weight=700
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    gamedetails-headerlabel-blue
+    {
+      font-family=basefont
+      font-size=17
+      font-weight=700
+      font-style=uppercase
+      textcolor=gdt.text.label
+    }
+
+    // styles for text used in RichText controls in various places
+    console_text_error
+    {
+      font-family="Lucida Console"
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-family="Menlo" [$OSX]
+      font-size=14
+      font-size=12 [$LINUX]
+      font-size=16 [$OSX]
+      textcolor=gdt.text.error
+      selectedtextcolor=gdt.text.error.selected
+      selectedbgcolor=focus
+    }
+
+    console_text
+    {
+      font-family="Lucida Console"
+      font-family="DejaVu Sans Mono" [$LINUX]
+      font-family="Menlo" [$OSX]
+      font-size=9
+      font-size=12 [$LINUX]
+      font-size=14 [$OSX]
+      textcolor=gdt.text
+      selectedtextcolor=gdt.text.selected
+      selectedbgcolor=focus
+    }
+
+		CChatRoomDlg
+		{
+			bgcolor=none
+			render {}
+			render_bg
+      {
+        0="fill(x0, y0, x1, y1-15, gdt.page)"
+      }
+		}
+
+		ChatListPanel
+		{
+      bgcolor=none
+      render {}
+      render_bg
+			{
+        0="fill(x0+3, y0+2, x1-3, y1-2, gdt.bg)"
+			}
+		}
+
+    Chat_MenuButton_withChrome
+    {
+      minimum-width=120
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=uppercase
+      textcolor=text
+      bgcolor=none
+      render_bg
+      {
+        0="gradient(x0, y0, x1, y1, buttonface, propertysheetbg)"
+      }
+    }
+
+    Chat_MenuButton_withChrome:disabled
+    {
+      textcolor=labeldisabled
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, none)"
+      }
+    }
+
+    SuperNavMenu
+    {
+      padding-left=8
+      padding-right=8
+      render {}
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.menu)"
+
+        1="fill(x0, y0, x1, y0+1, gdt.menu.edge)"
+        2="fill(x0, y1-1, x1, y1, gdt.menu.edge)"
+        3="fill(x0, y0+1, x0+1, y1-1, gdt.menu.edge)"
+        4="fill(x1-1, y0+1, x1, y1-1, gdt.menu.edge)"
+      }
+    }
+
+    SuperNavMenuItem
+    {
+      padding=1
+      font-size=14
+      font-weight=regular
+      font-style=uppercase
+      textcolor=gdt.menuitem.text
+      bgcolor=none
+    }
+
+    SuperNavMenuItem:selected
+    {
+      textcolor=gdt.menuitem.text.selected
+    }
+
+    SuperNavMenuItem:hover
+    {
+      textcolor=gdt.menuitem.text.hover
+    }
+
+    "SuperNavMenuDivider"
+    {
+      textcolor=none
+      render
+      {
+        0="fill(x0+6, y0+1, x1-6, y0+2, gdt.menu.div)"
+      }
+    }
+
+    "NotifyRemoteClientTitle"
+    {
+      textcolor=labeldisabled
+    }
+
+    "NotifyRemoteClientInfo"
+    {
+      textcolor="176 172 165 255"
+    }
+  }
+}
