@@ -1,0 +1,19 @@
+dark.styles {
+  colors {
+    dev.blue="78 200 255 255"
+    dev.green="122 255 78 255"
+    dev.orange="255 144 78 255"
+    dev.pink="255 78 224 255"
+    dev.purple="130 78 255 255"
+    dev.red="255 78 89 255"
+    dev.yellow="255 255 78 255"
+
+    dev.blue.t5="78 200 255 128"
+    dev.green.t5="122 255 78 128"
+    dev.orange.t5="255 144 78 128"
+    dev.pink.t5="255 78 224 128"
+    dev.purple.t5="130 78 255 128"
+    dev.red.t5="255 78 89 128"
+    dev.yellow.t5="255 255 78 128"
+  }
+}
