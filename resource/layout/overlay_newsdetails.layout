@@ -1,0 +1,59 @@
+"resource/layout/overlay_newsdetails.layout"
+{
+	controls
+	{
+		NewsDetailPanel { controlname="COverlay_Details_News" style=detailsbox }
+		TitleText { controlname="label" labeltext="#Overlay_Taskbar_News" style=detailsboxtitle }
+
+		ViewNewsButton { controlname=button labeltext="#Overlay_Friends_ViewNews" }
+	}
+
+	colors
+	{
+	}
+
+	styles
+	{
+    detailsbox
+    {
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+30, gdt.infobox.header)"
+        1="fill(x0, y0+30, x1, y0+31, gdt.infobox.div)"
+        2="fill(x0, y0+31, x1, y1, gdt.infobox)"
+      }
+    }
+
+    detailsboxtitle
+    {
+      font-size=18
+      textcolor=gdt.infobox.header.text
+    }
+
+		headline
+		{
+			textcolor="Text"
+		}
+
+		button
+		{
+      font-size=13
+      font-family=basefont
+      font-weight=400
+      inset=2
+		}
+	}
+
+	layout
+	{
+		region { name=box margin=10 margin-top=7 width=max height=max }
+
+		region { region=box name=news margin-top=40 margin-bottom=30 width=max height=max }
+
+		place { control="TitleText" region=box }
+
+		place { region=news controls=*newsitem dir=down height=45 width=max }
+
+		place { controls=ViewNewsButton region=box spacing=10 align=bottom  margin-bottom=4 }
+	}
+}

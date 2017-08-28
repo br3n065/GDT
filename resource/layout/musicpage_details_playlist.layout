@@ -1,0 +1,172 @@
+"resource/layout/musicpage_details_playlist.layout"
+{
+	controls
+	{
+		PlaylistTitleLabel { controlname="Label" style="PlaylistTitleStyle" }
+		TracksInfoLabel { controlname="Label" style="TracksInfoLabelStyle" }
+		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
+
+		PlayPlaylistButton {
+			controlname="Button"
+			labeltext="#Music_Playlist_Details_Play"
+			style="ActionButtonStyle"
+			command="PlaylistPlayAction"
+		}
+
+		AddPlaylistToQueueButton
+		{
+			controlname="Button"
+			labelText="#Music_Playlist_Details_AddToQueue"
+			style="AdditionalActionButtonStyle"
+			command="PlaylistAddToQueueAction"
+		}
+
+		AddRandomTracksToPlaylistButton
+		{
+			controlname="Button"
+			labelText="#Music_Playlist_Details_AddRandomTrack"
+			style="AdditionalActionButtonStyle"
+			command="PlaylistAddRandomTracksAction"
+		}
+	}
+
+	styles
+	{
+		CMusicPage_Details_Playlist
+		{
+			bgcolor=none
+		}
+
+		PlaylistTitleStyle
+		{
+			padding-top=5
+			padding-right=10
+			padding-bottom=5
+			padding-left=10
+			font-family=basefont
+			font-size=30
+			font-weight=400
+			textcolor=gdt.text.label
+			bgcolor=gdt.infobox.header
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0, y1-1, x1, y1, gdt.infobox.div)"
+      }
+		}
+
+		TracksInfoLabelStyle
+		{
+			padding=10
+			font-size=15
+			textcolor=gdt.text.label.dim
+			font-family=basefont
+			font-weight=400
+			bgcolor=none
+		}
+
+		TrackStyle
+		{
+			padding-top=0
+			padding-bottom=10
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			textcolor=gdt.text
+			bgcolor=none
+		}
+
+		TrackStyle:hover
+		{
+			textcolor=gdt.text.link.hover
+		}
+
+		CoverStyle {}
+
+    AdditionalActionButtonStyle
+		{
+			padding-top=6
+			padding-right=0
+			padding-bottom=-6
+			padding-left=-6
+			font-family=basefont
+			font-size=14
+			font-size=13 [$OSX]
+			textcolor=gdt.text
+			render_bg	{}
+		}
+
+		AdditionalActionButtonStyle:hover
+		{
+			textcolor=gdt.text.link.hover
+		}
+
+		ActionButtonStyle
+		{
+			inset="23 1 0 0"
+			font-family=basefont
+			font-size=16
+			font-weight=400
+			font-style=uppercase
+			textcolor=gdt.button.text
+			bgcolor=none
+			render
+			{
+				1="image(x0+6, y0+5, x1, y1, graphics/icon_play)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y0+1, gdt.pbutton.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.pbutton)"
+        2="fill(x0, y1-1, x1, y1, gdt.pbutton.shadow)"
+			}
+    }
+
+		ActionButtonStyle:hover
+		{
+			textcolor=gdt.button.text.hover
+			render
+			{
+				0="image(x0+6, y0+5, x1, y1, graphics/icon_play)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y0+1, gdt.pbutton.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.pbutton.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.pbutton.hover.shadow)"
+			}
+		}
+
+		ActionButtonStyle:active
+		{
+			textcolor=gdt.button.text.active
+			render
+			{
+				0="image(x0+6, y0+5, x1, y1, graphics/icon_play)"
+			}
+			render_bg
+			{
+				0="fill(x0, y0, x1, y0+1, gdt.pbutton.active.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.pbutton.active)"
+        2="fill(x0, y1-1, x1, y1, gdt.pbutton.active.shadow)"
+			}
+		}
+  }
+
+	layout
+	{
+		region { name=bodyregion x=10 y=10 width=max height=max overflow=scroll-vertical }
+		region { name=headerregion x=10 y=20 width=max height=max overflow=scroll-vertical }
+		region { name=leftcolumn x=20 width=200 overflow=scroll-vertical }
+		region { name=trackcolumn width=max overflow=scroll-vertical }
+
+		place { control="CoverImage" align=top width=200 height=200 }
+
+		place { region=headerregion control=PlaylistTitleLabel,TracksInfoLabel,leftcolumn dir=down }
+		place { region=leftcolumn  dir=down start=TracksInfoLabel spacing=10
+			control=CoverImage,PlayPlaylistButton }
+		place { region=leftcolumn	dir=down start=PlayPlaylistButton
+			control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton}
+		place { region=trackcolumn control=*MusicPageDetailsPlaylistTrack dir=down start=TracksInfoLabel x=230 width=max }
+	}
+}

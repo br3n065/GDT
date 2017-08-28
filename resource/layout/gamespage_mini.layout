@@ -1,0 +1,241 @@
+"resource/layout/gamespage_mini.layout"
+{
+	controls
+	{
+		GamesList { controlname=Panel style="DetailsBorderPanel" tabposition=1 }
+		CGamesPage_Mini	{ title="#Steam_Root_Title" }
+		library_filters { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=filters }
+		library_search { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
+		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=filters }
+
+		subnavgroup_library { ControlName="imagepanel" style="grouper" group="library" zpos="-4" }
+	}
+
+	styles
+	{
+		"CGamesPage_Mini ListPanelColumnSelectButton"
+    {
+      inset="-3 3 0 0"
+      render
+      {
+        0="image(x0+2, y0+5, x1, y1, graphics/icon_collapse)"
+      }
+      render_bg
+      {
+        0="fill(x0+1, y0+3, x1, y1+1, gdt.infobox.header)"
+        1="fill(x0+1, y1+1, x1, y1+2, gdt.infobox.div)"
+      }
+    }
+
+		"CGamesPage_Mini ListPanelColumnSelectButton:hover"
+    {
+      render
+      {
+        0="image(x0+2, y0+5, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+		"CGamesPage_Mini ListPanelColumnSelectButton:selected"
+    {
+      render
+      {
+        0="image(x0+2, y0+5, x1, y1, graphics/icon_collapse_over)"
+      }
+    }
+
+		"CGamesPage_Mini ListPanel"
+    {
+      padding-right=2
+      padding-left=4
+    }
+
+		"CGamesPage_Mini ListPanelInterior"
+    {
+			inset="3 1 0 0"
+			bgcolor=none
+			render {}
+			render_bg {}
+    }
+
+		"CGamesPage_Mini ListPanelInterior:scrollbar"
+    {
+			inset="3 1 0 0"
+			bgcolor=none
+			render_bg {}
+    }
+
+		grouper
+		{
+			bgcolor=none
+			render_bg
+			{
+				0="fill(x0+2, y0+1, x1-2, y1-1, gdt.clientheader)"
+			}
+		}
+
+		CGamesPage_Mini
+		{
+			bgcolor=gdt.client
+			render_bg
+      {
+        0="fill(x0, y0, x1-1, y0+29, gdt.client)"
+        1="fill(x0, y0+29, x1-1, y0+30, gdt.darkred)"
+      }
+		}
+
+		CGamesPage_Mini:framefocus
+		{
+			bgcolor=gdt.client
+			render_bg
+      {
+        0="fill(x0, y0, x1-1, y0+29, gdt.clientheader)"
+        1="fill(x0, y0+29, x1-1, y0+30, gdt.red)"
+      }
+		}
+
+		menubar
+    {
+      inset="2 2 0 0"
+      bgcolor=none
+    }
+
+		"menubar menubutton"
+    {
+      inset="0 5 0 0"
+    }
+
+		TextEntry
+		{
+			inset-top=0
+			inset-left=4
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor=gdt.text
+			shadowtextcolor=gdt.text // this is the cursor color
+			selectedtextcolor=gdt.text
+			bgcolor=none
+			selectedbgcolor=TextSelectedBG
+			render {}
+    }
+
+	  TextEntry:hover
+		{
+			textcolor=gdt.text.hover
+    }
+
+	  TextEntry:active
+		{
+			textcolor=gdt.text.hover
+    }
+
+	  TextEntry:selected
+		{
+			textcolor=gdt.text.hover
+    }
+
+    LibrarySearch
+		{
+			padding-left=0
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor=gdt.text
+		}
+
+		LibrarySearch:empty
+		{
+			font-style=italic
+			textcolor=gdt.text.disabled
+		}
+
+		LibrarySearch:hover
+		{
+			textcolor=gdt.text
+		}
+
+		LibrarySearch:empty:hover
+		{
+			font-style=italic
+			textcolor=gdt.text
+		}
+
+		LibrarySearch:disabled
+		{
+			textcolor=none
+		}
+
+		LibrarySearchIcon
+		{
+			inset="2 0 0 0"
+			padding-right=-1
+			padding-left=0
+			image="graphics/icon_button_search"
+			bgcolor=none
+			render_bg {}
+		}
+
+		NavLabel2
+		{
+			inset="2 0 2 0"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=uppercase
+			textcolor=gdt.text.label
+		}
+
+		NavLabel2:hover
+		{
+			font-style=outerglow,uppercase
+			textcolor=gdt.text.label.hover
+			font-outerglow-color=gdt.text.label.glow
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+		}
+
+		NavLabel2:selected
+		{
+			font-style=outerglow,uppercase
+			textcolor=gdt.text.label.hover
+			font-outerglow-color=gdt.text.label.glow
+			font-outerglow-offset=1
+			font-outerglow-filtersize=3
+		}
+
+		ListPanelColumnheader
+		{
+			bgcolor=none
+      render {}
+			render_bg {}
+		}
+
+		"CGamesPage_Mini CGameFilterMenuButton"
+		{
+			inset="3 0 0 0"
+			padding-left="-3"
+		}
+
+		DetailsBorderPanel
+		{
+			inset="-2 -1 0 0"
+			bgcolor=gdt.bg
+		}
+	}
+
+ 	layout
+ 	{
+		place { control="frame_captiongrip" margin=2 width=max height=30 }
+		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 margin-right=44 }
+
+		place { control="subnavgroup_library" align=top-center y=33 height=26 width=max margin-right=7 margin-left=7 }
+
+		place { control="gameslist" align=left margin-left=9 margin-right=9 margin-top=62 margin-bottom=18 width=max height=max }
+
+		place { control="library_search" width=80 }
+		place [!$OSX] { control="label_search_icon,library_search" align=left y=38 height=17 spacing=1 x=14 }
+		place [$OSX] { control="label_search_icon,library_search" align=left y=38 height=17 spacing=1 x=13 }
+
+		place { control="library_filters" align=right margin-left=10 margin-right=11 margin-top=36 height=22 spacing=1 }
+ 	}
+}

@@ -1,0 +1,79 @@
+"resource/layout/gamespage_details_cloud.layout"
+{
+	controls
+	{
+		clouddetails { controlname="CGamesPage_Details_Cloud" style="clouddetails" }
+		pagination { controlname="CPaginationPanel" style="pagination" }
+
+		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#steam_cloud" }
+
+		infolabelplural	{ controlname="Label" style="infolabel" }
+		infolabelsingular { controlname="Label" style="infolabel" }
+	}
+
+	colors
+	{
+		GameDetailsCloud.ExtraVerticalSpacing "75"
+		GameDetailsCloud.FileSpacing "4"
+		GameDetailsCloud.ButtonSpacing "10"
+		RichText.InsetX "0"
+		RichText.InsetY "3"
+	}
+
+	styles
+	{
+		clouddetails
+		{
+			bgcolor=gdt.infobox
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+28, gdt.infobox.header)"
+        1="fill(x0, y0+28, x1, y0+29, gdt.infobox.div)"
+        2="fill(x0, y0+29, x1, y1, gdt.infobox)"
+      }
+		}
+
+		everythinglabel
+		{
+			textcolor="Text"
+			font-size=15
+		}
+
+		infolabel
+		{
+			font-size=16
+			textcolor=Label
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=10 margin-top=7 width=max height=max }
+
+		place { region=body control=headerlabel width=max }
+
+		place
+		{
+			region=body
+			width=max
+			y=27
+			control=infolabelplural,infolabelsingular
+			dir=down
+			spacing=0
+			margin=0
+		}
+
+		place
+		{
+			region=body
+			width=max
+			y=53
+			control=*cloudfile
+			dir=down
+			spacing=4
+			margin=0
+		}
+
+		place { region=body control=pagination width=max align=bottom margin-bottom=5 }
+	}
+}

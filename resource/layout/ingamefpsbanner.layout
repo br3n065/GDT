@@ -1,0 +1,46 @@
+"resource/layout/ingamefpsbanner.layout"
+{
+	controls
+	{
+		TextLabel { controlname=Label labeltext="99" }
+	}
+
+	styles
+	{
+		CounterTextSmall
+		{
+			font-size=12
+		}
+
+		CounterTextMedium
+		{
+			font-size=14
+		}
+
+		CounterTextLarge
+		{
+			font-size=16
+		}
+
+		LowContrast
+		{
+      padding-right=4
+      padding-left=4
+			textcolor=gdt.fps.low.text
+			bgcolor=gdt.fps.low.bg
+		}
+
+		HighContrast
+		{
+      padding-right=4
+      padding-left=4
+			textcolor=gdt.fps.high.text
+			bgcolor=gdt.fps.high.bg
+		}
+	}
+
+	layout
+	{
+		place { control="TextLabel" margin=4 align=center }
+	}
+}

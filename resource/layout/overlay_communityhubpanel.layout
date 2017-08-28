@@ -1,0 +1,67 @@
+"resource/layout/overlay_communityhubpanel.layout"
+{
+	controls
+	{
+		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style=detailsbox }
+		TitleText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_Title" style=detailsboxtitle }
+		NumContributionsText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_NumContributions"  style=highlight }
+
+		ViewCommunityHub { controlname="Button" labeltext="#Overlay_View_CommunityHub" command="viewcommunityhub" }
+	}
+
+	colors
+	{
+
+	}
+
+	styles
+	{
+    detailsbox
+    {
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+30, gdt.infobox.header)"
+        1="fill(x0, y0+30, x1, y0+31, gdt.infobox.div)"
+        2="fill(x0, y0+31, x1, y1, gdt.infobox)"
+      }
+    }
+
+    detailsboxtitle
+    {
+      font-size=18
+      textcolor=gdt.infobox.header.text
+    }
+
+		Button
+		{
+			font-size=13
+			font-family=basefont
+			font-weight=400
+			inset=2
+		}
+
+		DarkRegion
+		{
+			bgcolor="40 40 40 255"
+		}
+
+		PreviewImage
+		{
+		}
+
+		highlight
+		{
+			textcolor=text
+		}
+	}
+
+	layout
+	{
+		region { name=title margin=10 margin-top=7 width=max height=100 }
+		region { name=actions y=60 margin=10 width=max height=124 }
+		place { control="TitleText" region=title }
+		place { control="NumContributionsText" region=title y=35 }
+
+		place { control="ViewCommunityHub" region="actions" spacing=10 align=bottom  margin-bottom=4}
+	}
+}

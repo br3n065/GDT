@@ -1,0 +1,87 @@
+"resource/layout/settingsdialog.layout"
+{
+	controls
+	{
+		SettingsDialog { controlname="CDialogSettings" }
+		okbutton { controlname="OKButton" }
+		cancelbutton { controlname="CancelButton" }
+		settingslist { controlname="SettingsList" style="SettingsList" wide=180 }
+		sheet { controlname="Sheet" style="PropertySheet" }
+	}
+
+	styles
+	{
+		CDialogSettings
+		{
+			minimum-width="740"
+			minimum-height="605"
+			bgcolor=none
+			render_bg
+			{
+        0="fill(x0, y0, x1-1, y0+29, gdt.client)"
+        1="fill(x0, y0+29, x1-1, y0+30, gdt.red)"
+
+        2="fill(x0, y0+30, x1, y1, gdt.client)"
+			}
+		}
+
+    CDialogSettings:framefocus
+		{
+			minimum-width="740"
+			minimum-height="605"
+			bgcolor=none
+			render_bg
+			{
+        0="fill(x0, y0, x1-1, y0+29, gdt.clientheader)"
+        1="fill(x0, y0+29, x1-1, y0+30, gdt.red)"
+
+        2="fill(x0, y0+30, x1, y1, gdt.client)"
+			}
+		}
+
+		PropertySheet
+		{
+			minimum-width="535"
+			minimum-height="525"
+			inset="0 30 0 0"
+			bgcolor=none
+			render_bg {}
+		}
+
+		"SettingsList"
+		{
+			inset="6 -16 0 0"
+			minimum-width="185"
+			minimum-height="545"
+			font-size=18
+			padding=6
+		}
+
+		ListPanelInterior
+    {
+      inset="3 0 0 0"
+      font-size=15
+      textcolor=text2
+      bgcolor=none
+      render
+			{
+        1="fill(x0, y0-1, x1, y0+4, gdt.bg)"  //line to hide a bug here
+			}
+      render_bg {}
+    }
+	}
+
+	layout
+	{
+		region { name="buttons" width=max height=36 align="bottom" }
+		region { name="body" margin-left=10 margin-right=10 margin-bottom=46 margin-top=-20 }
+
+		place { control="settingslist,sheet" region=body width=max height=max spacing=-4  }
+		place { control="settingslist" y=8 margin-top=30 }
+		place { control="sheet" y=8 margin-left=194 margin-top=0 }
+		place { control="okbutton,cancelbutton" region="buttons"
+		        width=92 height=25 align=right
+						margin-right=10 margin-top=0
+						margin-bottom=2 spacing=10 }
+	}
+}

@@ -1,0 +1,78 @@
+"resource/layout/overlay_achievementsdetails.layout"
+{
+	controls
+	{
+		AchievementsDetailPanel { controlname="COverlay_Details_Acheivements" style=detailsbox }
+		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
+
+		ViewAchievementsButton { controlname=button labeltext="#Overlay_Friends_ViewAchievements" }
+
+		progressbackground { controlname="ImagePanel" style="progressbackground" }
+		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+
+		ProgressTextEarned { controlname=label style=highlight labeltext="#Overlay_Achievement_Progress" }
+	}
+
+	styles
+	{
+    detailsbox
+    {
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+30, gdt.infobox.header)"
+        1="fill(x0, y0+30, x1, y0+31, gdt.infobox.div)"
+        2="fill(x0, y0+31, x1, y1, gdt.infobox)"
+      }
+    }
+
+    detailsboxtitle
+    {
+      font-size=18
+      textcolor=gdt.infobox.header.text
+    }
+
+		button
+		{
+      font-size=13
+      font-family=basefont
+      font-weight=400
+      inset=2
+		}
+
+		highlight
+		{
+			textcolor=gdt.text
+		}
+
+		progressbackground
+		{
+			bgcolor=gdt.progress.bg
+		}
+
+		progressbarimage
+		{
+			render
+      {
+        0="gradient(x0+1, y0, x1, y1, gdt.progress.light, gdt.progress.dark)"
+      }
+		}
+	}
+
+	layout
+	{
+		region { name=box margin=10 margin-top=7 width=max height=max }
+
+		region { region=box name=progresstext y=35 width=max }
+
+		place { control="TitleText" region=box }
+
+		place { region=progresstext controls=ProgressTextEarned }
+
+		place { region=box control=progressbackground y=57 width=max height=18 }
+		place { region=box control=progressbarimage y=58 height=16 }
+
+		place { region=box control=*achievement y=85 x=0 width=148 height=84 }
+
+		place { controls=ViewAchievementsButton region=box align=bottom margin-bottom=4 }
+	}
+}

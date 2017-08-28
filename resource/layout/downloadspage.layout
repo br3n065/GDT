@@ -1,0 +1,67 @@
+"resource/layout/downloadspage.layout"
+{
+	controls
+	{
+		// the container
+		"DownloadsPage" { controlname="CDownloadsPage" style="DownloadsPageStyle" }
+		"downloadsummarypanel" { ControlName="DownloadSummaryPanel" }
+		"panel_list" { controlname="SectionedListPanel" style="ListPanelStyle" }
+	}
+
+	styles
+	{
+		DownloadsPageStyle
+		{
+			bgcolor=gdt.bg
+			render {}
+		}
+
+		SectionedListPanelCollapser
+		{
+			inset="0 -1 0 0"
+			render_bg
+			{
+        0="fill(x0-2, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0-2, y0+19, x1, y1, gdt.infobox.div)"
+			}
+		}
+
+		SectionHeaderStyle
+		{
+			font-style=uppercase
+			render {}
+			render_bg
+			{
+        0="fill(x0-2, y0, x1, y1-1, gdt.infobox.header)"
+        1="fill(x0-2, y0+19, x1, y1, gdt.infobox.div)" // use 'y0+19' instead of 'y1-1' to prevent line from showing when height '0'
+			}
+		}
+
+		SectionHeaderStyleLabel
+		{
+			inset="0 2 0 0"
+			font-style=uppercase
+		}
+
+		ListPanelStyle
+		{
+			inset="0 0 0 0"
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor=text
+			shadowtextcolor=textdisabled	// the color of disabled line items
+			selectedtextcolor=textselected
+			bgcolor=none
+			selectedbgcolor=Focus
+			render {}
+			render_bg {}
+		}
+	}
+
+	layout
+	{
+		region { name=main x=0 y=0 margin=5 }
+		place { control="downloadsummarypanel,panel_list" dir=down region=main width=max height=max spacing=0 }
+	}
+}

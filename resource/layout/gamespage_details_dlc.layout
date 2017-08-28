@@ -1,0 +1,74 @@
+"resource/layout/gamespage_details_dlc.layout"
+{
+	controls
+	{
+		dlcdetails { controlname="CGamesPage_Details_DLC" style="dlcdetails" }
+		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_DLC_Details" }
+		latestimage { controlname="ImagePanel" style="mostrecentimage" scaling="fit" }
+		overlayimage { controlname"ImagePanel" style="overlayimage" scaling="fit" zpos=2 image="resource/dlc_overlay" }
+		latesttimelabel { controlname="Label" style="mostrecenttime" labeltext="#Steam_DLC_LatestItemAdded" }
+		dlclist { controlname="ListPanel" style="dlclist" }
+		moredlc { controlname="Button" labeltext="#Steam_FindDLCInStore" command="FindDLCInStore" }
+	}
+
+	colors
+	{
+		RichText.InsetX "0"
+		RichText.InsetY "3"
+		GameDetailsDLC.ExtraVerticalSpacing "200"
+	}
+
+	styles
+	{
+		dlcdetails
+		{
+			bgcolor=gdt.infobox
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+28, gdt.infobox.header)"
+        1="fill(x0, y0+28, x1, y0+29, gdt.infobox.div)"
+        2="fill(x0, y0+29, x1, y1, gdt.infobox)"
+      }
+		}
+
+		bodycontent
+		{
+			font-size=15
+			textcolor=gdt.text
+			selectedtextcolor=gdt.text
+			render_bg {}
+		}
+
+		"DLC_Uninstalled"
+		{
+			textcolor=gdt.text.disabled
+			selectedtextcolor=gdt.text.disabled
+		}
+
+		"DLC_Installed"
+		{
+			textcolor=gdt.text.label
+			selectedtextcolor=gdt.text.label
+		}
+
+		"mostrecenttime"
+		{
+			minimum-width=256
+			padding-top=3
+      font-weight=800
+      textcolor=gdt.text.ref
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=10 margin-top=7 width=max height=max }
+		place { region=body control=headerlabel width=max }
+		place { region=body y=29 control=latestimage width=257 height=120 }
+		place { region=body y=29 control=overlayimage width=257 height=120 }
+		place { region=body y=162 width=257 control=latesttimelabel }
+		place { region=body width=max control=dlclist }
+		place { region=body y=29 control=latestimage,dlclist dir=right height=120 spacing=9 }
+		place { region=body y=159 control=latesttimelabel,moredlc dir=right spacing=10 }
+	}
+}

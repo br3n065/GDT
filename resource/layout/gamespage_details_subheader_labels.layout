@@ -1,0 +1,77 @@
+"resource/layout/gamespage_details_subheader_labels.layout"
+{
+	controls
+	{
+		totalplaytimeheader { controlname="Label" style="headertext" labeltext="#steam_details_totalplaytimeheader" zpos="2" }
+		totalplaytimevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		gameplayedheader { controlname="Label" style="headertext" labeltext="#steam_details_lastplayedheader" zpos="2" }
+		gameplayedvalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		shareheader { controlname="Label" style="headertext" labeltext="#steam_details_sharedbyheader" zpos="2" }
+		sharevalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		streamheader { controlname="Label" style="headertext" labeltext="#steam_details_streamfromheader" zpos="2" }
+		streamvalue { controlname="Label" style="valuetext" labeltext="" zpos="2" }
+
+		lockedheader { controlname="Label" style="headertext" labeltext="#steam_details_lockedheader" zpos="2" }
+		lockedvalue { controlname="Label" style="valuetext" labeltext="#steam_details_lockedreason" zpos="2" }
+	}
+
+	styles
+	{
+		headertext
+		{
+			padding-top=2
+			padding-bottom=-1
+			padding-left=0
+			font-size=14
+			font-weight=700
+			font-style=uppercase
+			textcolor=gdt.text.label.dim
+		}
+
+		headertext-red
+		{
+			padding-top=2
+			padding-bottom=-1
+			padding-left=0
+			font-size=14
+			font-weight=700
+			font-style=uppercase
+			textcolor=gdt.text.label.dim
+		}
+
+		headertext-green
+		{
+			padding-top=2
+			padding-bottom=-1
+			padding-left=0
+			font-size=14
+			font-weight=700
+			font-style=uppercase
+			textcolor=gdt.text.label.dim
+		}
+
+		headertext-blue
+		{
+			padding-top=2
+			padding-bottom=-1
+			padding-left=0
+			font-size=14
+			font-weight=700
+			font-style=uppercase
+			textcolor=gdt.text.label.dim
+		}
+
+		valuetext
+		{
+			padding-top=2
+      padding-right=10
+			padding-bottom=-1
+			padding-left=0
+			font-size=14
+			textcolor=gdt.text.label.light
+		}
+	}
+}

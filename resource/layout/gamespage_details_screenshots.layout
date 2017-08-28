@@ -1,0 +1,46 @@
+"resource/layout/gamespage_details_screenshots.layout"
+{
+	controls
+	{
+		screenshotsdetails { controlname="CGamesPage_Details_Screenshots" style="screenshotsdetails" }
+
+		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Screenshots" }
+
+		screenshotsarea { controlname="CScreenshotsPanel" }
+
+		viewall	{ controlname="Button" labeltext="#Steam_ViewAllScreenshots" command="ViewAllScreenshots" }
+	}
+
+	colors
+	{
+		// Extra spacing beyond the flowing elements to account for header and button at the bottom
+		GameDetailsScreenshots.ExtraVerticalSpacing "80"
+
+		RichText.InsetX "0"
+		RichText.InsetY "3"
+	}
+
+	styles
+	{
+		screenshotsdetails
+		{
+			bgcolor=gdt.infobox
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+28, gdt.infobox.header)"
+        1="fill(x0, y0+28, x1, y0+29, gdt.infobox.div)"
+        2="fill(x0, y0+29, x1, y1, gdt.infobox)"
+      }
+		}
+	}
+
+	layout
+	{
+		region { name=body margin=10 margin-top=7 width=max height=max }
+
+		place { region=body control=headerlabel width=max }
+		place { region=body control=screenshotsarea dir=down y=28 width=max }
+
+		place { region=body control=viewall align=bottom margin-bottom=5 }
+	}
+}
