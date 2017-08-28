@@ -1,0 +1,414 @@
+page.styles
+{
+  styles
+  {
+		PageTab
+    {
+      inset="0 -2 0 0"
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      font-style=uppercase
+      textcolor=gdt.page.tab.text
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-4, gdt.page.tab)"
+        1="fill(x0, y1-2, x1+3000, y1, gdt.page.tab.div)"
+      }
+    }
+
+    PageTab:selected
+    {
+      textcolor=gdt.page.tab.text.selected
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-2, gdt.page.tab.selected)"
+        1="fill(x0, y1-2, x1+3000, y1, gdt.page.tab.div)"
+      }
+    }
+
+    PageTab:hover
+    {
+      textcolor=gdt.page.tab.text.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-4, gdt.page.tab.hover)"
+        1="fill(x0, y1-2, x1+3000, y1, gdt.page.tab.div)"
+      }
+    }
+
+    PageTab:selected:hover
+    {
+      textcolor=gdt.page.tab.text.selected.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1-2, gdt.page.tab.selected.hover)"
+        1="fill(x0, y1-2, x1+3000, y1, gdt.page.tab.div)"
+      }
+    }
+
+    PageTab:Focus
+	  {
+      textcolor=gdt.page.tab.text.focus
+    }
+
+   	TabPageCloseButton
+   	{
+   		padding-right=16
+   	}
+
+    "PageDragFrame PageTab"
+    {
+      font-size=14
+      font-style=""
+    }
+
+    "Page MenuBar"
+    {
+      bgcolor=none
+    }
+
+    Page
+    {
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.page.bg)"
+      }
+    }
+
+    "CSteamRootDialog Page"
+    {
+      bgcolor=none
+      render_bg {}
+    }
+
+    PropertyPage
+    {
+      bgcolor=propertysheetbg
+    }
+
+    "Page Button"
+    {
+      textcolor=gdt.button.text
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+      }
+    }
+
+    "Page Button:hover"
+    {
+      textcolor=gdt.button.text.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.hover.shadow)"
+      }
+    }
+
+    "Page Button:focus"
+    {
+      textcolor=gdt.button.text.focus
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.shadow)"
+      }
+    }
+
+    "Page Button:focus:hover"
+    {
+      textcolor=gdt.button.text.focus.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.focus.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.focus.hover.shadow)"
+      }
+    }
+
+    "Page Button:active"
+    {
+      textcolor=gdt.button.text.active
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.active.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.active)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.active.shadow)"
+      }
+    }
+
+    "Page Button:selected"
+    {
+      textcolor=gdt.button.text.selected
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.selected.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.selected)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.selected.shadow)"
+      }
+    }
+
+    "Page Button:disabled"
+    {
+      textcolor=gdt.button.text.disabled
+      render_bg
+      {
+				0="fill(x0, y0, x1, y0+1, gdt.button.disabled.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.disabled)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.disabled.shadow)"
+      }
+    }
+
+    "Page ToggleButton"
+    {
+      font-family=basefont
+      font-size=13
+      font-weight=400
+      textcolor=gdt.button.text
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.toggle.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.shadow)"
+      }
+    }
+
+    "Page ToggleButton:hover"
+    {
+      textcolor=gdt.button.text.hover
+      render_bg
+      {
+      	0="fill(x0, y0, x1, y0+1, gdt.toggle.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.hover.shadow)"
+      }
+    }
+
+    "Page ToggleButton:focus"
+    {
+      textcolor=gdt.button.text.focus
+      render_bg
+      {
+				0="fill(x0, y0, x1, y0+1, gdt.toggle.focus.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.focus.shadow)"
+      }
+    }
+
+    "Page ToggleButton:focus:hover"
+    {
+      textcolor=gdt.button.text.focus.hover
+      render_bg
+      {
+				0="fill(x0, y0, x1, y0+1, gdt.toggle.focus.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.toggle.focus.hover.shadow)"
+      }
+    }
+
+    "Page ToggleButton:selected"
+    {
+      textcolor=gdt.button.text.selected
+      render_bg
+      {
+				0="fill(x0, y0, x1, y0+1, gdt.toggle.selected.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.selected)"
+        2="fill(x0+2, y0+4, x0+6, y1-4, gdt.toggle.selected.indicator)"
+        3="fill(x0, y1-1, x1, y1, gdt.toggle.selected.shadow)"
+      }
+    }
+
+    "Page ToggleButton:selected:hover"
+    {
+      textcolor=gdt.button.text.selected.hover
+      render_bg
+      {
+				0="fill(x0, y0, x1, y0+1, gdt.toggle.selected.hover.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.toggle.selected.hover)"
+        2="fill(x0+2, y0+4, x0+6, y1-4, gdt.toggle.selected.hover.indicator)"
+        3="fill(x0, y1-1, x1, y1, gdt.toggle.selected.hover.shadow)"
+      }
+    }
+
+    "Page ComboBox"
+    {
+      textcolor=gdt.button.text
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+
+        // line to divide arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.highlight)"
+      }
+    }
+
+    "Page ComboBox:focus"
+    {
+      textcolor=gdt.button.text.focus
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+
+        // line to divide arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.focus.highlight)"
+      }
+    }
+
+    "Page ComboBox:hover"
+    {
+      textcolor=gdt.button.text.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+
+        // line to divide arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.hover.highlight)"
+      }
+    }
+
+    "Page ComboBox:focus:hover"
+    {
+      textcolor=gdt.button.text.focus.hover
+      render_bg
+      {
+        0="fill(x0, y0, x1, y0+1, gdt.button.highlight)"
+        1="fill(x0, y0+1, x1, y1-1, gdt.button.focus.hover)"
+        2="fill(x0, y1-1, x1, y1, gdt.button.shadow)"
+
+        // line to divide arrow from text
+        3="fill(x1-22, y0+4, x1-21, y1-4, gdt.button.focus.hover.highlight)"
+      }
+    }
+
+
+    "Page ComboBoxButton"
+    {
+      image="graphics/icon_down_default"
+      bgcolor=none
+      render_bg {}
+    }
+
+    "Page ComboBoxButton:hover"
+    {
+      image="graphics/icon_down_hover"
+    }
+
+    "Page ComboBoxButton:focus"
+    {
+      image="graphics/icon_down_focus"
+   	}
+
+    "Page ComboBoxButton:focus:hover"
+    {
+      image="graphics/icon_down_focus"
+    }
+
+    "Page CheckButtonList"
+    {
+      inset="1 1 1 1"
+      textcolor=gdt.selection.text
+      bgcolor=none
+      render {}
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.bg)"
+      }
+    }
+
+    "Page CheckButtonList:scrollbar"
+    {
+      inset="1 1 1 1"
+      textcolor=gdt.selection.text
+      bgcolor=none
+      render {}
+      render_bg
+      {
+        0="fill(x0, y0, x1, y1, gdt.bg)"
+      }
+    }
+
+    "Page RadioButtonList"
+    {
+      bgcolor=dialogbg
+    }
+
+    "Page ListPanel"
+    {
+      inset="0 -1 1 1"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=gdt.text
+      selectedtextcolor=gdt.text
+      bgcolor=gdt.bg
+      selectedbgcolor=gdt.list.selected.bg
+      render_bg {}
+    }
+
+    "Page ListPanelInterior"
+    {
+      inset="3 1 -1 0"
+      font-size=15
+      bgcolor=none
+      render {}
+      render_bg {}
+    }
+
+    "Page ListPanelInterior:scrollbar"
+    {
+      inset="3 1 -1 0"
+      bgcolor=none
+      render_bg {}
+    }
+
+    "Page ProgressBar"
+    {
+      textcolor=gdt.progress.light
+      bgcolor=none
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorder)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    "Page TextEntry"
+    {
+      textcolor=gdt.text
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorder)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorder)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorder)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorder)"
+      }
+    }
+
+    "Page TextEntry:focus"
+    {
+      textcolor=gdt.text
+      render
+      {
+        0="fill(x0+1, y0+1, x1-1, y0+2, ButtonBorderFocus)"
+        1="fill(x0+1, y1-2, x1-1, y1-1, ButtonBorderFocus)"
+        2="fill(x0+1, y0+1, x0+2, y1-1, ButtonBorderFocus)"
+        3="fill(x1-2, y0+1, x1-1, y1-1, ButtonBorderFocus)"
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+friends.styles
+{
+  colors
+  {
+    // Friends List colors
+    Friends.InGameColor="144 186 60 255"
+    Friends.InGameHoverColor="182 235 76 255"
+    Friends.OnlineColor="84 165 196 255"
+    Friends.OnlineHoverColor="104 203 242 255"
+    Friends.OfflineColor="127 127 127 255"
+    Friends.OfflineHoverColor="185 185 185 255"
+    Friends.PanelDefault="Label"
+    Friends.PanelOver="Text"
+    Friends.PanelSelected="ClientBG"
+    Friends.SectionHeader="Label"
+    Friends.NoAvatarOver="Text"
+    Friends.IgnoredColor="White"
+    Friends.ListHeaderFadeOut="54 54 54 0"
+    Friends.GoldenColor="255 255 99 255"
+    Friends.GoldenHoverColor="255 255 180 255"
+  }
+
+  styles
+  {
+    CFriendsListSectionAffordance
+    {
+      inset="0 0 0 0"
+      font-size=14
+      font-weight=400
+      textcolor=label
+    }
+
+    CFriendsListSectionHeader
+    {
+      inset="0 0 0 0"
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor=texthover
+      bgcolor=none
+      render_bg
+      {
+        0="fill(x0-1, y0, x1+4, y1-1, gdt.list.header)"
+        1="fill(x0-1, y1-1, x1+4, y1, gdt.list.div)"
+      }
+    }
+
+    CFriendPanel
+    {
+      inset="0 2 0 0"
+      font-family=basefont
+      font-size=14
+      font-size=13 [$OSX]
+      font-weight=400
+      textcolor=label
+      bgcolor=none
+    }
+
+    "CFriendPanel RichText URL"
+		{
+      font-size=14
+      font-style=underline
+      textcolor=gdt.text.link
+		}
+
+    "CFriendsDialog SectionedListPanelInterior"
+    {
+      inset="-6 -1 -1 -1"
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=text
+      shadowtextcolor=textdisabled	// the color of disabled line items
+      selectedtextcolor=textselected
+      bgcolor=none
+      selectedbgcolor=focus
+      render {}
+      render_bg
+      {
+        0="fill(x0-1, y0, x1, y1+1, gdt.bg)"
+      }
+    }
+
+    "CFriendsDialog PropertySheet"
+    {
+      bgcolor=none
+    }
+
+    "CFriendsDialog SectionedListPanel"
+    {
+      font-family=basefont
+      font-size=14
+      font-weight=400
+      textcolor=Text
+      selectedtextcolor=textselected
+      bgcolor=none
+      selectedbgcolor=gdt.friends.selected.bg
+      render {}
+      render_bg
+      {
+	   		1="fill(x0, y0, x1, y1, gdt.friends.page)"
+      }
+    }
+
+    friends_chat_text
+    {
+      font-size=16
+      textcolor=text
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_text_self
+    {
+      font-size=16
+      textcolor=chatowntextcolor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_history
+    {
+      font-size=16
+      textcolor=ChatDialog.HistoryColor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_event
+    {
+      font-size=16
+      textcolor=text
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_bright_event
+    {
+      font-size=16
+      font-weight=1000
+      textcolor=text
+      selectedtextcolor=textentryselected
+    }
+
+    friends_chat_url
+    {
+      font-size=16
+      font-style=underline
+      textcolor=text
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_name_ingame
+    {
+      font-size=16
+      textcolor=Friends.InGameColor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_name_golden
+    {
+      font-size=16
+      textcolor=Friends.GoldenColor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+
+    friends_chat_self
+    {
+      font-size=16
+      textcolor=Friends.OnlineColor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_name
+    {
+      font-size=16
+      textcolor=Friends.OnlineColor
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_accountid
+    {
+      font-size=16
+      textcolor=text
+      selectedtextcolor=textentryselected
+      selectedbgcolor=focus
+    }
+
+    friends_chat_securitylink
+    {
+      font-family=basefont
+      font-size=16
+      font-weight=400
+      font-style=underline
+      textcolor=text
+      selectedtextcolor=textselected
+      bgcolor=none
+      selectedbgcolor=Focus
+    }
+
+   	// used in friends tooltip and friends list for overriding regular styles with custom colors
+   	friends_offline
+   	{
+   		textcolor=Friends.OfflineColor
+   	}
+
+    friends_offline:hover
+   	{
+   		textcolor=Friends.OfflineHoverColor
+   	}
+
+   	friends_online
+   	{
+   		textcolor=Friends.OnlineColor
+   	}
+
+   	friends_online:hover
+   	{
+   		textcolor=Friends.OnlineHoverColor
+   	}
+
+   	friends_ingame
+   	{
+   		textcolor=Friends.InGameColor
+   	}
+
+   	friends_ingame:hover
+   	{
+   		textcolor=Friends.InGameHoverColor
+   	}
+
+   	friends_golden
+   	{
+   		textcolor=Friends.GoldenColor
+   	}
+
+   	friends_golden:hover
+   	{
+   		textcolor=Friends.GoldenHoverColor
+   	}
+
+   	friends_ignored
+   	{
+   		textcolor=Friends.IgnoredColor
+   	}
+  }
+}
