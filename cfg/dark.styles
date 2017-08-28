@@ -1,0 +1,291 @@
+dark.styles {
+  colors {
+    gdt.client="17 17 17 255"
+    gdt.client.edge="0 0 0 255"
+    gdt.clientheader="32 32 32 255"
+    gdt.bg="0 0 0 255"
+    gdt.page="37 37 37 255"
+    gdt.page.bg="37 37 37 255"
+    gdt.nav="32 32 32 255"
+    gdt.div="87 87 87 255"
+
+    gdt.menu="37 37 37 255"
+    gdt.menu.edge="0 0 0 255"
+    gdt.menu.div="0 0 0 255"
+    gdt.menu.item.hover="68 255 68 255"
+    gdt.menu.item.selected="68 68 255 255"
+
+    gdt.supernav="192 192 192 255"
+      gdt.supernav.hover="64 64 64 255"
+      gdt.supernav.selected="255 255 255 255"
+      gdt.supernav.disabled="96 96 96 255"
+
+    gdt.settings.bg="17 217 17 255"
+
+    //// Games List Colours
+    gdt.game.selectedbg="124 10 2 255"
+    gdt.gameinstalled="192 192 192 255"
+      gdt.gameinstalled.hover="255 255 255 255"
+      gdt.gameinstalled.selected="255 255 255 255"
+    gdt.gameuninstalled="87 87 87 255"
+      gdt.gameuninstalled.hover="150 150 150 255"
+      gdt.gameuninstalled.selected="0 0 0 255"
+    gdt.gamerunning="175 16 16 255"
+      gdt.gamerunning.hover="212 36 36 255"
+      gdt.gamerunning.selected="255 255 255 255"
+    gdt.gameshortcut="192 192 192 255"
+      gdt.gameshortcut.hover="255 255 255 255"
+      gdt.gameshortcut.selected="255 255 255 255"
+    gdt.gamemod="192 192 192 255"
+      gdt.gamemod.hover="255 255 255"
+      gdt.gamemod.selected="255 255 255 255"
+    gdt.gameupdating="170 70 67 255"
+      gdt.gameupdating.hover="195 95 92 255"
+      gdt.gameupdating.selected="0 0 0 255"
+    gdt.gamedecrypting="170 70 67 255"
+      gdt.gamedecrypting.hover="195 95 92 255"
+      gdt.gamedecrypting.selected="0 0 0 255"
+    gdt.gamesyncing="170 70 67 255"
+      gdt.gamesyncing.hover="195 95 92 255"
+      gdt.gamesyncing.selected="0 0 0 255"
+    gdt.gamelocked="87 87 87 255"
+      gdt.gamelocked.hover="150 150 150 255"
+      gdt.gamelocked.selected="0 0 0 255"
+
+    gdt.inbox="124 10 2 255"
+      gdt.inbox.hover="150 12 2 255"
+      gdt.inbox.selected="124 10 2 255"
+
+    gdt.infobox="37 37 37 255"
+    gdt.infobox.header="17 17 17 255"
+    gdt.infobox.div="0 0 0 255"
+
+    gdt.tooltip="37 37 37 255"
+    gdt.tooltip.edge="0 0 0 255"
+
+    gdt.list.header="17 17 17 255"
+    gdt.list.div="0 0 0 255"
+
+    //// Primary Button Colours
+    gdt.pbutton="175 16 16 255"
+      gdt.pbutton.active="212 36 36 255"
+      gdt.pbutton.disabled="43 43 43 255"
+      gdt.pbutton.focus="194 26 26 255"
+      gdt.pbutton.hover="212 36 36 255"
+      gdt.pbutton.selected="212 36 36 255"
+    gdt.pbutton.highlight="227 21 21 255"
+      gdt.pbutton.active.highlight="255 43 43 255"
+      gdt.pbutton.disabled.highlight="59 59 59 255"
+      gdt.pbutton.focus.highlight="245 36 36 255"
+      gdt.pbutton.hover.highlight="255 43 43 255"
+      gdt.pbutton.selected.highlight="255 43 43 255"
+    gdt.pbutton.shadow="125 11 11 255"
+      gdt.pbutton.active.shadow="161 27 27 255"
+      gdt.pbutton.disabled.shadow="23 23 23 255"
+      gdt.pbutton.focus.shadow="143 19 19 255"
+      gdt.pbutton.hover.shadow="161 27 27 255"
+      gdt.pbutton.selected.shadow="161 27 27 255"
+
+    //// Default Button Colours
+    gdt.button="87 87 87 255"
+      gdt.button.active="119 119 119 255"
+      gdt.button.disabled="43 43 43 255"
+      gdt.button.focus="87 87 87 255"
+        gdt.button.focus.hover="119 119 119 255"
+      gdt.button.hover="119 119 119 255"
+      gdt.button.selected="119 119 119 255"
+        gdt.button.selected.hover="139 139 139 255"
+    gdt.button.highlight="119 119 119 255"
+      gdt.button.active.highlight="153 153 153 255"
+      gdt.button.disabled.highlight="59 59 59 255"
+      gdt.button.focus.highlight="119 119 119 255"
+        gdt.button.focus.hover.highlight="153 153 153 255"
+      gdt.button.hover.highlight="153 153 153 255"
+      gdt.button.selected.highlight="153 153 153 255"
+        gdt.button.selected.hover.highlight="173 173 173 255"
+    gdt.button.shadow="47 47 47 255"
+      gdt.button.active.shadow="79 79 79 255"
+      gdt.button.disabled.shadow="23 23 23 255"
+      gdt.button.focus.shadow="47 47 47 255"
+        gdt.button.focus.hover.shadow="79 79 79 255"
+      gdt.button.hover.shadow="79 79 79 255"
+      gdt.button.selected.shadow="79 79 79 255"
+        gdt.button.selected.hover.shadow="99 99 99 255"
+
+    //// Graphic Button Colours
+    gdt.gbutton="17 17 17 255"
+      gdt.gbutton.hover="22 22 22 255"
+    gdt.gbutton.edge="0 0 0 255"
+
+    //// Default Toggle Colours
+    gdt.toggle="87 87 87 255"
+      gdt.toggle.focus="87 87 87 255"
+        gdt.toggle.focus.hover="119 119 119 255"
+      gdt.toggle.hover="119 119 119 255"
+      gdt.toggle.selected="87 87 87 255"
+        gdt.toggle.selected.hover="119 119 119 255"
+    gdt.toggle.highlight="119 119 119 255"
+      gdt.toggle.focus.highlight="119 119 119 255"
+        gdt.toggle.focus.hover.highlight="153 153 153 255"
+      gdt.toggle.hover.highlight="153 153 153 255"
+      gdt.toggle.selected.highlight="119 119 119 255"
+        gdt.toggle.selected.hover.highlight="173 173 173 255"
+    gdt.toggle.shadow="47 47 47 255"
+      gdt.toggle.focus.shadow="47 47 47 255"
+        gdt.toggle.focus.hover.shadow="79 79 79 255"
+      gdt.toggle.hover.shadow="79 79 79 255"
+      gdt.toggle.selected.shadow="47 47 47 255"
+        gdt.toggle.selected.hover.shadow="79 79 79 255"
+    gdt.toggle.selected.indicator="124 10 2 255"
+      gdt.toggle.selected.hover.indicator="158 13 3 255"
+
+    gdt.progress.bg="0 0 0 255"
+    gdt.progress.light="166 3 40 255"
+    gdt.progress.dark="112 0 26 255"
+
+    gdt.graph="170 70 67 255"
+    gdt.graph.disc="228 228 228 255"
+    gdt.graph.net="170 70 67 255"
+
+    gdt.scrollbar="37 37 37 255"
+      gdt.scrollbar.hover="47 47 47 255"
+      gdt.scrollbar.active="57 57 57 255"
+      gdt.scrollbar.disabled="37 37 37 128"
+
+    gdt.page.tab="27 27 27 255"
+      gdt.page.tab.hover="47 47 47 255"
+      gdt.page.tab.selected="37 37 37 255"
+        gdt.page.tab.selected.hover="37 37 37 255"
+    gdt.page.tab.div="37 37 37 255"
+
+    gdt.list.selected.bg="124 10 2 255"
+
+    gdt.friends.page="0 0 0 255"
+    gdt.friends.selected.bg="124 10 2 255"
+
+    gdt.overlay.bg="0 0 0 64"
+    gdt.overlay.fade="0 0 0 192"
+
+    gdt.notification="17 17 17 255"
+    gdt.notification.edge="0 0 0 255"
+
+    gdt.url.frame="64 64 64 255"
+
+    gdt.communityfile="0 0 0 166"
+    gdt.communityfile.edge="0 0 0 166"
+
+    gdt.screenshot.border.published="175 16 16 255"
+    gdt.screenshot.border.selected="212 36 36 255"
+    gdt.screenshot.border.unpublished="0 0 0 255"
+    gdt.screenshot.border.uploaded="0 0 0 255"
+
+    gdt.fps.low.bg="0 0 0 32"
+    gdt.fps.high.bg="0 0 0 64"
+
+
+    //// General Colours
+    gdt.black="0 0 0 255"
+    gdt.red="124 10 2 255"
+    gdt.darkred="62 5 1 255"
+
+
+    //// Text Colours
+    gdt.text="228 228 228 255"
+      gdt.text.disabled="128 128 128 225"
+      gdt.text.selected="255 255 255 225"
+        gdt.text.selected.bg="124 10 2 255"
+    gdt.text.error="237 105 34 225"
+      gdt.text.error.selected="237 105 34 225"
+    gdt.text.label="228 228 228 255"
+      gdt.text.label.dim="160 160 160 255"
+      gdt.text.label.disabled="128 128 128 255"
+      gdt.text.label.focus="255 255 255 255"
+      gdt.text.label.glow="128 128 128 255"
+      gdt.text.label.hover="255 255 255 255"
+      gdt.text.label.light="255 255 255 255"
+    gdt.text.link="255 0 0 255"
+      gdt.text.link.hover="171 16 32 255"
+    gdt.text.news="255 255 255 255"
+    gdt.text.online="128 128 128 255"
+      gdt.text.online.disabled="64 64 64 255"
+    gdt.text.ref="85 85 85 255"
+    gdt.text.tag="160 160 160 255"
+    gdt.text.url="228 228 228 255"
+      gdt.text.url.disabled="160 160 160 255"
+        gdt.text.url.disabled.selected="228 228 228 255"
+
+    gdt.menu.text="160 160 160 255"
+      gdt.menu.text.disabled="64 64 64 255"
+      gdt.menu.text.hover="255 255 255 255"
+      gdt.menu.text.selected="255 255 255 255"
+    gdt.menu.item.text="228 228 228 255"
+      gdt.menu.item.text.disabled="128 128 128 255"
+        gdt.menu.item.text.disabled.hover="128 128 128 255"
+      gdt.menu.item.text.hover="171 16 32 255"
+      gdt.menu.item.text.selected="171 16 32 255"
+
+    gdt.infobox.header.text="255 255 255 255"
+    gdt.list.text.link="192 192 192 255"
+      gdt.list.text.link.hover="255 255 255 255"
+    gdt.tooltip.text="228 228 228 225"
+
+    gdt.button.text="255 255 255 255"
+      gdt.button.text.active="255 255 255 255"
+      gdt.button.text.disabled="128 128 128 255"
+      gdt.button.text.focus="255 255 255 255"
+        gdt.button.text.focus.hover="255 255 255 255"
+      gdt.button.text.hover="255 255 255 255"
+      gdt.button.text.selected="255 255 255 255"
+        gdt.button.text.selected.hover="255 255 255 255"
+
+    gdt.gbutton.text="228 228 228 255"
+      gdt.gbutton.text.hover="171 16 32 255"
+
+    //// Check/Radio Buttons
+    gdt.selection.text="160 160 160 255"
+      gdt.selection.text.disabled="64 64 64 255"
+
+    gdt.page.tab.text="228 228 228 255"
+      gdt.page.tab.text.focus="255 255 255 255"
+      gdt.page.tab.text.hover="255 255 255 255"
+      gdt.page.tab.text.selected="255 255 255 255"
+        gdt.page.tab.text.selected.hover="255 255 255 255"
+
+    gdt.fps.low.text="228 228 228 255"
+    gdt.fps.high.text="175 16 16 255"
+
+
+
+
+
+    //// Replaced - TODO - Check they are not in use, then remove.
+    gdt.clientframe="0 0 0 255"
+
+    gdt.headerlabel="119 31 107 255"
+
+    gdt.menuitem.hover="68 255 68 255"
+    gdt.menuitem.selected="68 68 255 255"
+    gdt.menuitem.text="228 228 228 255"
+      gdt.menuitem.text.disabled="128 128 128 255"
+        gdt.menuitem.text.disabled.hover="128 128 128 255"
+      gdt.menuitem.text.hover="171 16 32 255"
+      gdt.menuitem.text.selected="171 16 32 255"
+
+
+
+
+
+    //// Defaults Redefined
+    clientbg="17 17 17 255"
+
+    textselectedbg="124 10 2 255" // background color of any selected text
+
+    gamedetailsbluetransparent="228 228 228 160"
+    gamedetailsgreentransparent="228 228 228 160"
+    gamedetailsredtransparent="228 228 228 160"
+
+    gamedetailsblue="228 228 228 255"
+    gamedetailsgreen="228 228 228 255"
+    gamedetailsred="228 228 228 255"
+  }
+}
