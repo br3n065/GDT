@@ -2,7 +2,6 @@ steam.styles
 {
   include "config.ini"
   include "resource/styles/colors.styles"
-  //include "resource/styles/colors_alt.styles"
 
   include "resource/styles/friends.styles"
   include "resource/styles/html.styles"
@@ -1319,6 +1318,7 @@ steam.styles
     ScrollBar
     {
       inset="0 0 0 0"
+      bgcolor=none
     }
 
     ScrollBarButton.up
