@@ -151,6 +151,7 @@ dark.styles {
       gdt.scrollbar.hover="47 47 47 255"
       gdt.scrollbar.active="57 57 57 255"
       gdt.scrollbar.disabled="37 37 37 128"
+    gdt.scrollbar.bg="0 0 0 255"
 
     gdt.page.tab="27 27 27 255"
       gdt.page.tab.hover="47 47 47 255"
