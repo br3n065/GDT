@@ -220,8 +220,8 @@
 			bgcolor=none
 			render_bg
 			{
-				0="fill(x0, y0, x1-1, y1+29, gdt.client)"
-        1="fill(x0, y0+29, x1-1, y0+30, gdt.darkred)"
+				0="fill(x0, y0, x1-1, y1+28, gdt.client)"
+        1="fill(x0, y0+28, x1-1, y0+29, gdt.darkred)"
 			}
 		}
 
@@ -234,8 +234,8 @@
 			bgcolor=none
 			render_bg
 			{
-				0="fill(x0, y0, x1-1, y0+29, gdt.clientheader)"
-        1="fill(x0, y0+29, x1-1, y0+30, gdt.red)"
+				0="fill(x0, y0, x1-1, y0+28, gdt.clientheader)"
+        1="fill(x0, y0+28, x1-1, y0+29, gdt.red)"
 			}
 		}
 
@@ -677,10 +677,10 @@
 
 		place { control="UIStatusPanel" width=max height=40 align=bottom  margin-bottom=18 }
 
-		place [!$OSX] { control="MenuBar" align=top margin-top=5 margin-left=2 }
+		place [!$OSX] { control="MenuBar" align=top margin-top=3 margin-left=2 }
 
-		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=88 spacing=7 }
-		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
+		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=10 margin-right=88 spacing=7 }
+		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=10 margin-right=15 spacing=7 }
 
 		place [!$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=78 margin-top=1 width=30 }
 		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=8 margin-top=1 width=30 }
@@ -695,8 +695,8 @@
 		place { control="ParentalLockButton" align=right end-right="InboxButton" margin-top=7 margin-right=10 height=23 }
 		place { control="SupportAlert" align=right end-right="ParentalLockButton" margin-top=4 margin-right=10 height=26 }
 
-		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=10 margin-right=9 spacing=-5 }
-		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=10 margin-left=4 spacing=-7 }
+		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=8 margin-right=9 spacing=-5 }
+		place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=8 margin-left=4 spacing=-7 }
 
 		region { name=bottom align=bottom width=max height=75 }
 
