@@ -297,6 +297,11 @@
 			bgcolor=none
 			render {}
 		}
+    
+    ScrollBar
+    {
+      bgcolor=none
+    }
 	}
 
 	layout
