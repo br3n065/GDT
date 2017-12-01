@@ -252,8 +252,8 @@ dark.styles {
       gdt.page.tab.text.selected="255 255 255 255"
         gdt.page.tab.text.selected.hover="255 255 255 255"
 
-    gdt.fps.low.text="228 228 228 255"
-    gdt.fps.high.text="175 16 16 255"
+    gdt.fps.low.text="135 206 250 255"
+    gdt.fps.high.text="102 255 0 255"
 
 
 
